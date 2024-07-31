@@ -1,5 +1,22 @@
+// Reseteo de Estilos General
+
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+}
+body{
+    min-height: 0;
+}
+p{
+    text-wrap: pretty;
+}
+h1,h2,h3,h4,h5,h6{
+    text-wrap: balance;
+}
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
 }
