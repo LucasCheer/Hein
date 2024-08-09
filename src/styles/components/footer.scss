@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    height: 460px;
+    background-color: black;
+    color: white;
+    font-family: 'Lato';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .footer-container{
+            width: 1128px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+                .footer-sup{
+                    width: 1064px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                        figure{
+                            width: 150px;
+                            height: 60px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: .75rem;
+
+                                img{
+                                    width: 40px;
+                                    height: 45px;
+                                }
+                                figcaption{
+                                    font-size: 2rem;
+                                    font-weight: 700;
+                                }
+                        }
+                        .socials-container{
+                            width: 150px;
+                            display: flex;
+                            justify-content: space-between;
+                                .logo{
+                                    width: 32px;
+                                }
+                        }
+                }
+                hr{
+                    width: 1064px;
+                }
+                .footer-inf{
+                    width: 1064px;
+                    height: 123px;
+                    display: flex;
+                    gap: 3.5rem;
+                        ul{
+                            list-style: none;
+                                li{
+                                    cursor: pointer;
+                                    text-decoration: underline;
+                                    color: gray;
+                                    padding: .90rem 0;
+                                        &:hover{
+                                            color: white;
+                                        }
+                                }
+                                
+                        }
+                }
+        }
+}
