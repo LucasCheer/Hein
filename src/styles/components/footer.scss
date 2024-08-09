@@ -1,14 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+// Importaciones 
+
+@import '../utils/reset.scss'; //Importo el reset
+@import '../utils/variables.scss'; //Importo las variables
 
 .footer{
     width: 100%;
     height: 460px;
-    background-color: black;
-    color: white;
-    font-family: 'Lato';
+    color: $font-color-logo;
+    background-color: $bg-color-foot;
+    font-family: $font-stack;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
                             display: flex;
                             justify-content: space-between;
                                 .logo{
-                                    width: 32px;
+                                    width: 34px;
                                 }
                         }
                 }
@@ -63,14 +63,13 @@
                             list-style: none;
                                 li{
                                     cursor: pointer;
-                                    text-decoration: underline;
-                                    color: gray;
+                                    // text-decoration: underline;
+                                    color: $font-color-light;
                                     padding: .90rem 0;
                                         &:hover{
-                                            color: white;
+                                            color: $primary-color;
                                         }
-                                }
-                                
+                                }  
                         }
                 }
         }
