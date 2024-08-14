@@ -176,4 +176,9 @@ body, html {
   color: white;
 }
 
+h2 {
+  color: red;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=main.css.map */
