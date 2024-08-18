@@ -210,7 +210,7 @@ h1 {
 }
 .featured-article .featured-info {
   width: 443px;
-  padding: 24px 24px;
+  padding: 24px 60px 24px 0;
 }
 .featured-article .featured-info h2 {
   font-size: 34px;
