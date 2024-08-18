@@ -12,15 +12,6 @@
     line-height: $p-line-height;
 }
 
-@mixin tagsText {
-    font-family: $font-stack;
-    color: #000000;
-    font-size: $tagline-font-size;
-    font-weight: $tagline-font-weight;
-    line-height: $tagline-line-height;
-    text-transform: uppercase;
-}
-
 @mixin ctaButton ($btn-color, $btn-text-color){
     height: 51px;
     width: 115px;
@@ -39,7 +30,7 @@
     border: none;
     cursor: pointer;
     display: inline-block;
-    text-decoration: underline;
+    text-decoration: $txt-btn-decoration;
     background-color: inherit;
     font-family: $font-stack;
     font-size: 16px;
@@ -77,4 +68,13 @@
     cursor: pointer;
     box-shadow: 0 6px 6px #00000062;
     @include paragraph();
+}
+
+@mixin tagsText {
+    font-family: $font-stack;
+    color: #000000;
+    font-size: $tagline-font-size;
+    font-weight: $tagline-font-weight;
+    line-height: $tagline-line-height;
+    text-transform: uppercase;
 }
