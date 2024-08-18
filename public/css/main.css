@@ -257,6 +257,46 @@ h1 {
   padding-bottom: 40px;
   margin-left: 180px;
 }
+.tags-switcher .switcher-default {
+  height: 39px;
+  border-radius: 40px;
+  background-color: #E8E8E8;
+  margin-left: 10px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3843137255);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  letter-spacing: -2%;
+  line-height: 120%;
+  width: 144px;
+}
+.tags-switcher .switcher-default:hover {
+  background-color: #C9C9C9;
+}
+.tags-switcher .switcher-default:active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.tags-switcher .switcher-all-articles {
+  width: 180px;
+  color: #FFFFFF;
+  height: 39px;
+  border-radius: 40px;
+  background-color: #000000;
+  margin-left: 10px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3843137255);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  letter-spacing: -2%;
+  line-height: 120%;
+}
 
 .tag-social {
   width: 59px;
@@ -303,48 +343,6 @@ h1 {
   width: 79px;
 }
 
-.switcher-default {
-  height: 39px;
-  width: 144px;
-  border-radius: 40px;
-  background-color: #E8E8E8;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-weight: medium;
-  letter-spacing: -2%;
-  line-height: 120%;
-  margin-left: 10px;
-  padding: 10px 16px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3843137255);
-}
-.switcher-default:hover {
-  background-color: #C9C9C9;
-}
-.switcher-default:active {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.switcher-all-articles {
-  height: 39px;
-  width: 180px;
-  border-radius: 40px;
-  background-color: #000000;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-weight: medium;
-  letter-spacing: -2%;
-  line-height: 120%;
-  color: #FFFFFF;
-  margin-left: 10px;
-  padding: 10px 16px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3843137255);
-}
-
 .article-listing {
   padding: 90px 0 75px 0;
 }
@@ -356,25 +354,24 @@ h1 {
   padding-bottom: 1.5rem;
   gap: 1.5rem;
 }
-
-.blog-article {
+.article-row .blog-article {
   height: 297px;
   width: 264px;
   border-radius: 12px;
   background-color: #FFFFFF;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
-.blog-article img {
+.article-row .blog-article img {
   border-radius: 12px 12px 0 0;
 }
-.blog-article .article-text {
+.article-row .blog-article .article-text {
   height: 169px;
   padding: 16px 16px;
 }
-.blog-article .article-text h3 {
+.article-row .blog-article .article-text h3 {
   padding: 12px 0 12px 0;
 }
-.blog-article .txt-btn-article {
+.article-row .blog-article .txt-btn-article {
   border: none;
   cursor: pointer;
   display: inline-block;
