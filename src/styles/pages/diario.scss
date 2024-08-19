@@ -47,6 +47,14 @@ main{
                                         font-weight: 600;
                                         text-align: center;
                                     }
+
+                            }
+                            &:hover{
+                                border: 2px $accent-color solid;
+                                    figcaption{
+                                        color: $accent-color;
+                                    }
+                                
                             }
                     }
                 }
@@ -88,7 +96,5 @@ main{
                             background-color: $btn-color-hv;
                         }
                 }
-
-
         }
 }
