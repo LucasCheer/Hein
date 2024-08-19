@@ -22,7 +22,7 @@
                     height: 100%;
                     font-size: $h3-font-size;
                     font-weight: $h3-font-weight;
-                    color: gray;
+                    color: $font-color-light;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -38,6 +38,7 @@
                     align-items: center;
                     width: 600px;
                     color: $secundary-color;
+                    font-weight: $p-font-weight;
                     list-style: none;
                         button{
                             @include ctaButton ($btn-color, $btn-text-color);
