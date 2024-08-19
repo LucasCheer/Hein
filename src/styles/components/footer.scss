@@ -63,8 +63,7 @@
                             list-style: none;
                                 li{
                                     cursor: pointer;
-                                    // text-decoration: underline;
-                                    color: $font-color-light;
+                                    color: gray;
                                     padding: .90rem 0;
                                         &:hover{
                                             color: $primary-color;
