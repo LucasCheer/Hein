@@ -1,0 +1,133 @@
+@import '../utils/variables.scss';
+@import '../utils/reset.scss';
+@import '../components/footer.scss';
+@import '../utils/mixins.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $font-stack;
+}
+
+h1 {
+    padding-bottom: 45px;
+    text-align: left;
+    margin-left: 200px;
+    @include pageTitle;
+}
+
+.article-1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.featured-article {
+    padding: 12px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 12px;
+    width: 1127px;
+    height: 376px;
+    .featured-info{
+        width: 443px;
+        padding: 24px 60px 24px 0;
+        h2 {
+            font-size: $h2-font-size;
+            font-weight: $h2-font-weight; 
+            padding-bottom: 30px;
+            }
+        p {
+            @include paragraph;
+            padding-bottom: 30px;
+        }
+        img {
+            border-radius: 16px;
+            float: right;
+            height: 352px;
+            width: 636px;
+            padding-left: 24px;
+        }
+        .btn-read {
+            @include ctaButton ($btn-color, $btn-text-color);
+            &:hover {
+                background-color: $btn-color-hv;
+                transition: all ease-in-out 0.5s;
+            }
+        }
+    }
+}
+
+.tags-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    margin-left: 180px;
+    .switcher-default{
+        @include articleSwitcher($switcher-color-default);
+        width: 144px;
+        &:hover{
+            background-color: $switcher-color-hv;
+        }
+        &:active{
+            background-color: $switcher-color-selected;
+            color: $btn-text-color;   
+        }
+    }
+    .switcher-all-articles{
+        width: 180px;
+        color: $btn-text-color;
+        @include articleSwitcher($switcher-color-selected);
+    }
+}
+
+.tag-social {
+    width: 59px;
+    @include articleTags($tg-color-social);
+}
+
+.tag-professional {
+    width: 100px;
+    @include articleTags($tg-color-profesional);
+}
+
+.tag-personal {
+    @include articleTags($tg-color-personal);
+    width: 79px;
+}
+
+.article-listing{
+    padding: 90px 0 75px 0;
+}
+
+.article-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
+    .blog-article{ 
+        @include articleCards;
+        img {
+            border-radius: 12px 12px 0 0;
+        }
+        .article-text{
+            height: 169px;
+            padding: 16px 16px;
+            h3 {
+                padding: 12px 0 12px 0;
+            }
+        }
+        .txt-btn-article { 
+            @include textButton;
+        } 
+    }
+}
+
+
