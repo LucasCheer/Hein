@@ -44,7 +44,7 @@ body, html {
   height: 100%;
   font-size: 24px;
   font-weight: bold;
-  color: gray;
+  color: #9E9E9E;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +60,7 @@ body, html {
   align-items: center;
   width: 600px;
   color: #FF7E1D;
+  font-weight: medium;
   list-style: none;
 }
 .header .navbar menu button {
@@ -507,6 +508,85 @@ body, html {
 }
 .footer .footer-container .footer-inf ul li:hover {
   color: #FAF7F2;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 0;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.header .navbar {
+  width: 1128px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+}
+.header .navbar .logo-container {
+  width: 128px;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9E9E9E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.header .navbar .logo-container img {
+  width: 40px;
+  height: 45px;
+}
+.header .navbar menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  color: #FF7E1D;
+  font-weight: medium;
+  list-style: none;
+}
+.header .navbar menu button {
+  height: 51px;
+  width: 115px;
+  border-radius: 8px;
+  background-color: #0C6FF9;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px 10px;
+  border: none;
 }
 
 * {
