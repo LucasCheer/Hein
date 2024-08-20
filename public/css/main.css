@@ -375,11 +375,12 @@ body, html {
   color: #FAF7F2;
 }
 
-main {
+.main-diary {
   width: 100%;
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
-main .diary-section {
+.main-diary .diary-section {
   width: 100%;
   height: 534px;
   display: flex;
@@ -388,23 +389,23 @@ main .diary-section {
   gap: 45px;
   background-color: #FAF7F2;
 }
-main .diary-section .title {
+.main-diary .diary-section .title {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
-main .diary-section .subtitle {
+.main-diary .diary-section .subtitle {
   font-size: 34px;
   font-weight: bold;
   text-align: center;
   color: rgba(0, 0, 0, 0.6588235294);
 }
-main .diary-section .card-container {
+.main-diary .diary-section .card-container {
   display: flex;
   justify-content: center;
   gap: 26px;
 }
-main .diary-section .card-container .card {
+.main-diary .diary-section .card-container .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,22 +415,22 @@ main .diary-section .card-container .card {
   border-radius: 12px;
   cursor: pointer;
 }
-main .diary-section .card-container .card figure {
+.main-diary .diary-section .card-container .card figure {
   width: 120px;
 }
-main .diary-section .card-container .card figure figcaption {
+.main-diary .diary-section .card-container .card figure figcaption {
   color: #9E9E9E;
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
 }
-main .diary-section .card-container .card:hover {
+.main-diary .diary-section .card-container .card:hover {
   border: 2px #0C6FF9 solid;
 }
-main .diary-section .card-container .card:hover figcaption {
+.main-diary .diary-section .card-container .card:hover figcaption {
   color: #0C6FF9;
 }
-main .write-section {
+.main-diary .write-section {
   width: 100%;
   height: 644px;
   background-color: #FFFFFF;
@@ -439,12 +440,12 @@ main .write-section {
   align-items: center;
   gap: 54px;
 }
-main .write-section .diary-form {
+.main-diary .write-section .diary-form {
   width: 741px;
   height: 402px;
   font-weight: 500;
 }
-main .write-section .diary-form textarea {
+.main-diary .write-section .diary-form textarea {
   font-size: 1rem;
   font-family: system-ui;
   width: 741px;
@@ -453,7 +454,7 @@ main .write-section .diary-form textarea {
   margin: 0.5rem 0;
   border-radius: 8px;
 }
-main .write-section button {
+.main-diary .write-section button {
   width: 233px;
   height: 44px;
   background-color: #0C6FF9;
@@ -464,7 +465,7 @@ main .write-section button {
   border: none;
   cursor: pointer;
 }
-main .write-section button:hover {
+.main-diary .write-section button:hover {
   background-color: #005EE5;
 }
 
@@ -1233,82 +1234,6 @@ main {
   grid-template-rows: repeat(3, 284px);
   grid-column-gap: 25px;
   grid-row-gap: 80px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.footer {
-  width: 100%;
-  height: 460px;
-  background-color: black;
-  color: white;
-  font-family: "Lato";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer .footer-container {
-  width: 1128px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer .footer-container .footer-sup {
-  width: 1064px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer .footer-container .footer-sup figure {
-  width: 150px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-}
-.footer .footer-container .footer-sup figure img {
-  width: 40px;
-  height: 45px;
-}
-.footer .footer-container .footer-sup figure figcaption {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.footer .footer-container .footer-sup .socials-container {
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-}
-.footer .footer-container .footer-sup .socials-container .logo {
-  width: 32px;
-}
-.footer .footer-container hr {
-  width: 1064px;
-}
-.footer .footer-container .footer-inf {
-  width: 1064px;
-  height: 123px;
-  display: flex;
-  gap: 3.5rem;
-}
-.footer .footer-container .footer-inf ul {
-  list-style: none;
-}
-.footer .footer-container .footer-inf ul li {
-  cursor: pointer;
-  text-decoration: underline;
-  color: gray;
-  padding: 0.9rem 0;
-}
-.footer .footer-container .footer-inf ul li:hover {
-  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

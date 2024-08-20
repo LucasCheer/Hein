@@ -5,9 +5,10 @@
 @import '../components/footer.scss';
 
 // Estilos Diario
-main{
+.main-diary{
     width: 100%;
     font-family: $font-stack;
+    margin: 0;
         .diary-section{
             width: 100%;
             height: 534px;
