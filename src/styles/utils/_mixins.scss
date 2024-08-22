@@ -1,0 +1,86 @@
+@mixin flexbox ($justify, $alingn) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alingn;
+}
+
+@mixin pageTitle {
+    font-family: $font-stack;
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+}
+
+@mixin paragraph {
+    font-family: $font-stack;
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    letter-spacing: $p-letter-spacing;
+    line-height: $p-line-height;
+}
+
+@mixin ctaButton ($btn-color, $btn-text-color){
+    height: 51px;
+    width: 115px;
+    border-radius: 8px;
+    background-color: $btn-color;
+    font-family: $font-stack;
+    color: $btn-text-color;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px 10px;
+    border: none;
+}
+
+@mixin textButton { //modificar variables
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: $txt-btn-decoration;
+    background-color: inherit;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0.6;
+}
+
+// Articles Section
+
+@mixin articleCards {
+    height: 297px;
+    width: 264px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+@mixin articleTags ($tg-color-personal) {
+    height: 21px;
+    border-radius: 40px;
+    border: none;
+    padding: 4px 8px;
+    background-color: $tg-color-personal;
+    @include tagsText();
+}
+
+@mixin articleSwitcher ($switcher-color-default) {
+    height: 39px;
+    border-radius: 40px;
+    background-color: $switcher-color-default;
+    margin-left: 10px;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 6px #00000062;
+    @include paragraph();
+}
+
+@mixin tagsText {
+    font-family: $font-stack;
+    color: #000000;
+    font-size: $tagline-font-size;
+    font-weight: $tagline-font-weight;
+    line-height: $tagline-line-height;
+    text-transform: uppercase;
+}

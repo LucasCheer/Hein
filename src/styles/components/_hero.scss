@@ -1,0 +1,44 @@
+@import '../utils/reset.scss'; //Importo el reset
+@import '../utils/variables.scss'; //Importo las variables
+@import '../utils/mixins.scss'; // Importo Mixins
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: $primary-color;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-placeholder {
+    flex: 1;
+    height: 300px;
+    @include flexbox(center, center);
+    font-weight: bold;
+}
+
+.image-placeholder img {
+    height: 350px;
+    width: auto;
+}
+
+h1 {
+    color: $secundary-color;
+    font-size: 36px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.cta-button {
+    background-color: $background-color;
+    color: $bg-color;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
