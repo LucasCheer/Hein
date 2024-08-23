@@ -1,5 +1,156 @@
-//Importacion del footer
-@import '../components/nav.scss';
-@import '../components/footer.scss';
+@import "../utils/variables.scss";
+@import "../utils/reset.scss";
+@import "../components/footer.scss";
+@import "../components/nav.scss";
+@import "../utils/mixins.scss";
 
+.main-container {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0;
+    gap: 0px;
 
+    .recursos-pag {
+        background-color: #ffffff;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            margin-top: 24px;
+            margin-bottom: 64px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 24px;
+            width: 80%;
+            margin: auto;
+
+            article {
+                border-radius: 24px;
+                display: grid;
+                gap: 16px;
+
+                &.card-resources {
+                    background-color: #f5f5f5;
+                    padding: 64px 24px 24px;
+                    position: relative;
+
+                    div {
+                        color: #ffffff;
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -5%;
+                        left: 5%;
+
+                        &#book-simbol {
+                            background-color: #b98520;
+                            box-shadow: 5px 10px 24px -4px #b98520;
+                        }
+
+                        &#article-simbol {
+                            background-color: #f72859;
+                            box-shadow: 5px 10px 24px -4px #f72859;
+                        }
+
+                        &#done-simbol {
+                            background-color: #9e28dc;
+                            box-shadow: 5px 10px 24px -4px #9e28dc;
+                        }
+
+                        &#groups-simbol {
+                            background-color: #000000;
+                            box-shadow: 5px 10px 24px -4px #000000;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: #000000;
+                opacity: 0.5;
+            }
+
+            a {
+                color: #000000;
+            }
+        }
+
+        .btn-cta {
+            background-color: #0c6ff9;
+            color: #ffffff;
+            padding: 20px 16px;
+            border-radius: 10px;
+            margin: 64px auto 58px;
+            border: none;
+            margin-top: 64px;
+            align-items: center;
+
+            &:hover {
+                background-color: #005ee5;
+            }
+        }
+    }
+
+    .about-container {
+        background-color: #faf7f2;
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+        h2 {
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            margin-top: 24px;
+            margin-bottom: 64px;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 24px;
+            width: 80%;
+            margin: auto;
+
+            .about-card {
+                background-color: #ffffff;
+                border-radius: 24px;
+                padding: 110px 24px 24px;
+                text-align: center;
+                align-items: center;
+                position: relative;
+                display: grid;
+                gap: 16px;
+
+                img {
+                    border-radius: 50%;
+                    height: 110px;
+                    width: 110px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: -5%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+
+                .rolEquipo, .rol-team {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
