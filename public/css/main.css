@@ -533,11 +533,13 @@ body, html {
   color: #FAF7F2;
 }
 
-main {
+.main-diary {
   width: 100%;
   font-family: "Lato", sans-serif;
+  margin: 0;
+  padding-top: 30px;
 }
-main .diary-section {
+.main-diary .diary-section {
   width: 100%;
   height: 534px;
   display: flex;
@@ -546,23 +548,23 @@ main .diary-section {
   gap: 45px;
   background-color: #FAF7F2;
 }
-main .diary-section .title {
+.main-diary .diary-section .title {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
-main .diary-section .subtitle {
+.main-diary .diary-section .subtitle {
   font-size: 34px;
   font-weight: bold;
   text-align: center;
   color: rgba(0, 0, 0, 0.6588235294);
 }
-main .diary-section .card-container {
+.main-diary .diary-section .card-container {
   display: flex;
   justify-content: center;
   gap: 26px;
 }
-main .diary-section .card-container .card {
+.main-diary .diary-section .card-container .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -572,22 +574,22 @@ main .diary-section .card-container .card {
   border-radius: 12px;
   cursor: pointer;
 }
-main .diary-section .card-container .card figure {
+.main-diary .diary-section .card-container .card figure {
   width: 120px;
 }
-main .diary-section .card-container .card figure figcaption {
+.main-diary .diary-section .card-container .card figure figcaption {
   color: #9E9E9E;
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
 }
-main .diary-section .card-container .card:hover {
+.main-diary .diary-section .card-container .card:hover {
   border: 2px #0C6FF9 solid;
 }
-main .diary-section .card-container .card:hover figcaption {
+.main-diary .diary-section .card-container .card:hover figcaption {
   color: #0C6FF9;
 }
-main .write-section {
+.main-diary .write-section {
   width: 100%;
   height: 644px;
   background-color: #FFFFFF;
@@ -597,12 +599,12 @@ main .write-section {
   align-items: center;
   gap: 54px;
 }
-main .write-section .diary-form {
+.main-diary .write-section .diary-form {
   width: 741px;
   height: 402px;
   font-weight: 500;
 }
-main .write-section .diary-form textarea {
+.main-diary .write-section .diary-form textarea {
   font-size: 1rem;
   font-family: system-ui;
   width: 741px;
@@ -611,7 +613,7 @@ main .write-section .diary-form textarea {
   margin: 0.5rem 0;
   border-radius: 8px;
 }
-main .write-section button {
+.main-diary .write-section button {
   width: 233px;
   height: 44px;
   background-color: #0C6FF9;
@@ -622,7 +624,7 @@ main .write-section button {
   border: none;
   cursor: pointer;
 }
-main .write-section button:hover {
+.main-diary .write-section button:hover {
   background-color: #005EE5;
 }
 
@@ -1238,19 +1240,19 @@ body, html {
   color: #FAF7F2;
 }
 
-main {
+.main-about {
   margin: 100px 0 140px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Lato";
-  background-color: #faf7f2;
+  font-family: "Lato", sans-serif;
+  background-color: #FAF7F2;
   gap: 120px;
 }
 
 .sobre-nosotros {
   margin: 0 auto;
-  color: #ff7e1d;
+  color: #FF7E1D;
   font-size: 1.5em;
 }
 .sobre-nosotros .titulo-nosotros {
@@ -1274,20 +1276,11 @@ main {
   padding: 24px;
   box-sizing: border-box; /* Incluye el padding y el borde dentro de width y height */
   display: flex;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 24px;
 }
-
-.foto-personal {
-  width: 140px;
-  height: 140px;
-  flex-grow: 0;
-  object-fit: contain;
-  box-shadow: 0 9px 34px 0 rgba(0, 0, 0, 0.2);
-}
-
-.nombre-rol {
+.card .nombre-rol {
   width: 177.5px;
   height: 52px;
   flex-grow: 0;
@@ -1298,8 +1291,7 @@ main {
   gap: 8px;
   padding: 0;
 }
-
-.nombre-apellido {
+.card .nombre-rol h2 {
   height: 21px;
   align-self: stretch;
   flex-grow: 0;
@@ -1310,10 +1302,9 @@ main {
   line-height: 1.05;
   letter-spacing: normal;
   text-align: left;
-  color: #000;
+  color: #000000;
 }
-
-.rol-equipo {
+.card .nombre-rol h3 {
   height: 23px;
   align-self: stretch;
   flex-grow: 0;
@@ -1338,10 +1329,10 @@ main {
   line-height: 1.2;
   letter-spacing: -0.32px;
   text-align: left;
-  color: #a7a7a7;
-  background-color: #dddada;
-  border-radius: 5px;
-  text-decoration: underline;
+  color: #9E9E9E;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1349,8 +1340,8 @@ main {
 }
 
 .card a:hover {
-  color: #faf7f2;
-  background-color: #314dcc;
+  color: #FFFFFF;
+  background-color: #0C6FF9;
 }
 
 .part-izquierda {
