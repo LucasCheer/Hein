@@ -1,3 +1,103 @@
+@import "../utils/variables.scss";
 @import "../components/footer.scss";
-@import "../utils/variables.scss"
+@import "../components/navtemp.scss";
+@import "../utils/mixins.scss";
 
+$color-1: #b98520;
+$color-2: #f72859; // Azul
+$color-3: #9e28dc; // Rojo
+$color-4: #000000;
+
+//Estilos Features
+
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .feature-p {
+        color: #0000003b;
+        font-weight: bold;
+        font-size: small;
+        text-transform: uppercase;
+        margin-bottom: 24px; // Espaciado adicional
+    }
+
+    .title {
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 48px;
+    }
+
+    section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        gap: 40px; 
+
+        // Estilos generales
+        img {
+            width: 100%;
+            max-width: 400px; 
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6; 
+        }
+
+        .key-words {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.05); 
+
+            .material-symbols-outlined {
+                margin-right: 10px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+
+        &.feature-section-1 {
+            @include feature-section($color-1);
+        }
+
+        &.feature-section-2 {
+            flex-direction: row-reverse; 
+            @include feature-section($color-2);
+        }
+
+        &.feature-section-3 {
+            @include feature-section($color-3);
+        }
+
+        &.feature-section-4 {
+            flex-direction: row-reverse;
+            @include feature-section($color-4);
+        }
+    }
+}
