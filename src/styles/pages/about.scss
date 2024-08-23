@@ -5,19 +5,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap");
 
-main{
+.main-about{
     margin: 100px 0 140px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Lato';
-    background-color: #faf7f2;
+    font-family: $font-stack;
+    background-color: $primary-color;
     gap: 120px;
 }
 
 .sobre-nosotros {   
     margin: 0 auto;
-    color: #ff7e1d;
+    color: $secundary-color;
     font-size: 1.5em;
         .titulo-nosotros {
             padding: 0;
@@ -42,59 +42,55 @@ main{
     padding: 24px;
     box-sizing: border-box; /* Incluye el padding y el borde dentro de width y height */
     display: flex;
-    background-color: #fff;
+    background-color: $btn-text-color;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 24px;
+
+        .nombre-rol {
+            width: 177.5px;
+            height: 52px;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 8px;
+            padding: 0;
+
+                // Nombre:
+                h2 {
+                    height: 21px;
+                    align-self: stretch;
+                    flex-grow: 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.05;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $font-color-dark;
+                    }
+                
+                // Rol:
+                h3 {
+                    height: 23px;
+                    align-self: stretch;
+                    flex-grow: 0;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: -0.32px;
+                    text-align: left;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+        }
+
 }
 
-.foto-personal {
-    width: 140px;
-    height: 140px;
-    flex-grow: 0;
-    object-fit: contain;
-    box-shadow: 0 9px 34px 0 rgba(0, 0, 0, 0.2);
-}
-
-.nombre-rol {
-    width: 177.5px;
-    height: 52px;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 8px;
-    padding: 0;
-}
-
-.nombre-apellido {
-    height: 21px;
-    align-self: stretch;
-    flex-grow: 0;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.05;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    }
-
-.rol-equipo {
-    height: 23px;
-    align-self: stretch;
-    flex-grow: 0;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: -0.32px;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.6);
-}
 
 .card a {
     width: 171px;
@@ -106,10 +102,10 @@ main{
     line-height: 1.2;
     letter-spacing: -0.32px;
     text-align: left;
-    color: #a7a7a7;
-    background-color: #dddada;
-    border-radius: 5px;
-    text-decoration: underline;
+    color: $font-color-light;
+    background-color: $bg-color;
+    border-radius: 8px;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,8 +113,8 @@ main{
 }
 
 .card a:hover {
-    color:#faf7f2;
-    background-color:#314dcc
+    color:$btn-text-color;
+    background-color: $accent-color;
 }
 
 .part-izquierda{
@@ -142,7 +138,7 @@ main{
         width: 166px;
         height: 70px;
         }
-    
+
 }
 
 .part-derecha{

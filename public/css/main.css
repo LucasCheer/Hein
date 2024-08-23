@@ -1080,19 +1080,19 @@ body, html {
   color: #FAF7F2;
 }
 
-main {
+.main-about {
   margin: 100px 0 140px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Lato";
-  background-color: #faf7f2;
+  font-family: "Lato", sans-serif;
+  background-color: #FAF7F2;
   gap: 120px;
 }
 
 .sobre-nosotros {
   margin: 0 auto;
-  color: #ff7e1d;
+  color: #FF7E1D;
   font-size: 1.5em;
 }
 .sobre-nosotros .titulo-nosotros {
@@ -1116,20 +1116,11 @@ main {
   padding: 24px;
   box-sizing: border-box; /* Incluye el padding y el borde dentro de width y height */
   display: flex;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 24px;
 }
-
-.foto-personal {
-  width: 140px;
-  height: 140px;
-  flex-grow: 0;
-  object-fit: contain;
-  box-shadow: 0 9px 34px 0 rgba(0, 0, 0, 0.2);
-}
-
-.nombre-rol {
+.card .nombre-rol {
   width: 177.5px;
   height: 52px;
   flex-grow: 0;
@@ -1140,8 +1131,7 @@ main {
   gap: 8px;
   padding: 0;
 }
-
-.nombre-apellido {
+.card .nombre-rol h2 {
   height: 21px;
   align-self: stretch;
   flex-grow: 0;
@@ -1152,10 +1142,9 @@ main {
   line-height: 1.05;
   letter-spacing: normal;
   text-align: left;
-  color: #000;
+  color: #000000;
 }
-
-.rol-equipo {
+.card .nombre-rol h3 {
   height: 23px;
   align-self: stretch;
   flex-grow: 0;
@@ -1180,10 +1169,10 @@ main {
   line-height: 1.2;
   letter-spacing: -0.32px;
   text-align: left;
-  color: #a7a7a7;
-  background-color: #dddada;
-  border-radius: 5px;
-  text-decoration: underline;
+  color: #9E9E9E;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1191,8 +1180,8 @@ main {
 }
 
 .card a:hover {
-  color: #faf7f2;
-  background-color: #314dcc;
+  color: #FFFFFF;
+  background-color: #0C6FF9;
 }
 
 .part-izquierda {
