@@ -326,6 +326,7 @@ body, html {
   left: 0;
   right: 0;
   margin: auto;
+  box-shadow: 0px 23px 34px 0px rgba(0, 0, 0, 0.1647058824);
 }
 .main-container .about-container .team-container .about-card .rolEquipo, .main-container .about-container .team-container .about-card .rol-team {
   font-weight: bold;
@@ -1785,14 +1786,31 @@ body, html {
   border: none;
 }
 
-.emotion-cards {
+.main-emotions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-emotions h1 {
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.main-emotions h2 {
+  margin-bottom: 50px;
+  color: #9E9E9E;
+}
+
+.emotion-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 80%;
+  margin: 0 auto 60px auto;
 }
 
 .emotion-card {
-  width: 200px;
+  width: 270px;
   height: 300px;
   perspective: 1000px;
   cursor: pointer;
@@ -1808,19 +1826,25 @@ body, html {
   border-radius: 10px;
 }
 .emotion-card .card-front {
-  background-color: #f0f0f0;
+  background-color: #FAF7F2;
+  color: #0C6FF9;
+  border: 2px solid #0C6FF9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  box-shadow: 0px 0px 0px 3px rgba(12, 111, 249, 0.25);
 }
 .emotion-card .card-front img {
-  max-width: 100%;
+  max-width: 75%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 .emotion-card .card-back {
-  background-color: #fff;
+  background-color: #0C6FF9;
+  color: #FAF7F2;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -1828,15 +1852,22 @@ body, html {
   align-items: center;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 14px 34px rgba(12, 111, 249, 0.25);
 }
 .emotion-card .card-back h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
+.emotion-card .card-back h4 {
+  font-size: 0.8rem;
+}
+.emotion-card .card-back hr {
+  width: 90%;
+  margin-bottom: 0.2rem;
+}
 .emotion-card .card-back p {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.7rem;
+  color: #FAF7F2;
   line-height: 1.4;
 }
 .emotion-card:hover .card-front {
