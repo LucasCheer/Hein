@@ -1,6 +1,5 @@
 // Importaciones 
 
-@import '../utils/reset.scss'; //Importo el reset
 @import '../utils/variables.scss'; //Importo las variables
 
 .footer{
@@ -62,11 +61,14 @@
                         ul{
                             list-style: none;
                                 li{
-                                    cursor: pointer;
-                                    color: gray;
                                     padding: .90rem 0;
-                                        &:hover{
-                                            color: $primary-color;
+                                        a{
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            color: $font-color-light;
+                                                &:hover{
+                                                    color: $font-color-logo;
+                                                }
                                         }
                                 }  
                         }
