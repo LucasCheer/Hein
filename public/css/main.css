@@ -1940,7 +1940,7 @@ body, html {
 }
 
 .emotion-card {
-  width: 200px;
+  width: 270px;
   height: 300px;
   perspective: 1000px;
   cursor: pointer;
@@ -1967,7 +1967,7 @@ body, html {
   box-shadow: 0px 0px 0px 3px rgba(12, 111, 249, 0.25);
 }
 .emotion-card .card-front img {
-  max-width: 100%;
+  max-width: 75%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -1992,7 +1992,7 @@ body, html {
   font-size: 0.8rem;
 }
 .emotion-card .card-back hr {
-  width: 100%;
+  width: 90%;
   margin-bottom: 0.2rem;
 }
 .emotion-card .card-back p {
