@@ -19,6 +19,9 @@ h1 {
     margin-left: 200px;
     @include pageTitle;
 }
+.article-section{
+    margin-top: 35px;
+}
 
 .article-1{
     display: flex;
