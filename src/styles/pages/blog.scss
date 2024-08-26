@@ -1,6 +1,4 @@
 @import '../utils/variables.scss';
-@import '../components/footer.scss';
-@import '../components/navtemp.scss';
 @import '../utils/mixins.scss';
 
 *{
@@ -12,11 +10,19 @@ body {
     background-color: $primary-color;
     font-family: $font-stack;
 }
+.main-blog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+.article-section{
+    width: 1127px;
+}
 
 h1 {
     padding-bottom: 45px;
     text-align: left;
-    margin-left: 200px;
     @include pageTitle;
 }
 
@@ -68,7 +74,6 @@ h1 {
     flex-direction: row;
     align-items: flex-start;
     padding-bottom: 40px;
-    margin-left: 180px;
     .switcher-default{
         @include articleSwitcher($switcher-color-default);
         width: 144px;

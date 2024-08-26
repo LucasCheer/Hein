@@ -1,4 +1,3 @@
-@import '../utils/reset.scss'; //Importo el reset
 @import '../utils/variables.scss'; //Importo las variables
 @import '../utils/mixins.scss'; // Importo Mixins
 
@@ -26,11 +25,18 @@
     width: auto;
 }
 
-h1 {
-    color: $secundary-color;
-    font-size: 36px;
-    margin: auto;
-    padding-bottom: 40px;
+.hero-div {
+    .hero-h1 {
+        color: $secundary-color;
+        font-size: 36px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    p{
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: large;
+    }
 }
 
 .cta-button {

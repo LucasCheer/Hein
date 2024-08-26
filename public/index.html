@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-
 <head>
-    <!-- Etiquetas Meta -->
+    <!-- Metadata -->
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Hein es una pagina web que se basa en la gestion de emociones y gestion emocional">
-    <meta name="keywords"
-        content="gestión de emociones, inteligencia emocional, bienestar emocional, salud mental, mindfulness, manejo del estrés, desarrollo personal, autoayuda, control de emociones, crecimiento personal, técnicas de relajación, autoconocimiento, bienestar, autoestima, motivación, equilibrio emocional, emociones positivas, resiliencia emocional, diario emocional, emociones diarias">
+    <meta name="description" content="Hein es una pagina web que se basa en la gestion de emociones y gestion emocional">
+    <meta name="keywords" content="gestión de emociones, inteligencia emocional, bienestar emocional, salud mental, mindfulness, manejo del estrés, desarrollo personal, autoayuda, control de emociones, crecimiento personal, técnicas de relajación, autoconocimiento, bienestar, autoestima, motivación, equilibrio emocional, emociones positivas, resiliencia emocional, diario emocional, emociones diarias">
     <meta name="authors" content="authors.txt">
     <meta name="copyright" content="Todos los derechos reservados hacia Hein" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Links -->
-    <!-- Bootstrap start-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
-    <!-- Bootstrap end-->
-    <link rel="icon" type="image/x-icon" href="/src/assets/icons/hein-logo.png">
+    <link rel="icon" type="image/x-icon" href="../src/assets/icons/hein-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" type="text/css" href="/public/css/main.css">
-
-    <title>Hein | Emociones</title>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Bootstrap start-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap end -->
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
+    <!-- Title -->
+    <title>Hein</title>
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-end align-content-end">
             <div class="container">
-                <a class="navbar-brand logo" href="#"><img src="/src/assets/img/hein-logo.png" alt="logo Hein" />Hein</a>
+                <a class="navbar-brand logo" href="#index.html"><img src="/src/assets/icons/hein-logo2.png" alt="logo Hein" />Hein</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
                     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,10 +39,10 @@
                     id="navbar-toggler">
                     <ul class="navbar-nav  d-md-flex justify-content-md-center align-items-md-center">
                         <li class="nav-item">
-                            <a class="nav-item-inicio" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-item-inicio" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-item-a" aria-current="page" href="#">Mi diario</a>
+                            <a class="nav-item-a" aria-current="page" href="html/diary.html">Mi diario</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a type="button"
@@ -64,58 +52,44 @@
                                 Recursos
                             </a>
                             <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a id="dropdown-item" class="dropdown-item" href="#">Blog<i
+                                <li><a id="dropdown-item" class="dropdown-item" href="html/blog.html">Blog<i
                                             class="bi bi-caret-right-fill"></i></a></li>
-                                <li><a id="dropdown-item" class="dropdown-item" href="#">Emociones<i
+                                <li><a id="dropdown-item" class="dropdown-item" href="html/emotions.html">Emociones<i
                                             class="bi bi-caret-right-fill"></i></a></li>
                                 <li><a id="dropdown-item" class="dropdown-item" href="#">Comunidad<i
                                             class="bi bi-caret-right-fill"></i></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-item-a" aria-current="page" href="#">Sobre nosotros</a>
+                            <a class="nav-item-a" aria-current="page" href="html/about.html">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-item-a" href="#contacto">
-                                <button type="button" class="btn btn-primary">¡Súmate!</button></a>
+                            <a class="nav-item-a" href="html/login.html">
+                                <button type="button" class="btn btn-primary pb-2 pt-2 fw-bold">¡Súmate!</button></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="main-content container">
-            <div class="text-content">
-                <h1>Gestionar tus emociones es el primer paso hacia tu bienestar</h1>
-                <p class="fw-semibold">
-                    Entre el estímulo y la respuesta hay un espacio. En ese espacio está
+        <div class="main-content">
+            <div class="text-content hero-div">
+                <h1 class="hero-h1">Gestionar tus emociones es el primer paso hacia tu bienestar</h1>
+                <p class="hero-p">
+                    Entre el estímulo y la respuesta hay un espacio. En ese <br> espacio está
                     nuestro poder para elegir nuestra respuesta.
                 </p>
-                <button type="button" class="btn btn-primary" id="subscribeButton">
-                    Súmate a HEIN
-                </button>
+                <a class="nav-item-a" href="html/login.html">
+                    <button type="button" class="btn btn-primary pb-2 pt-2 fw-bold">
+                        Súmate a HEIN
+                    </button>
+                </a>
             </div>
             <div class="image-placeholder">
-                <img src="/src/assets/img/team.png" alt="equipo de personas" />
+                <img src="../src/assets/img/team.png" alt="equipo de personas" />
             </div>
         </div>
-    </header> -->
-    <header class="header">
-        <nav class="navbar">
-            <figure class="logo-container">
-                <img src="../../src/assets/icons/hein-logo.png" alt="Logo Hein">
-                <figcaption>
-                    Hein
-                </figcaption>
-            </figure>
-            <menu>
-                <li>Inicio</li>
-                <li>Mi diario</li>
-                <li>Recursos</li>
-                <li>Sobre Nosotros</li>
-                <button>Sumate!</button>
-            </menu>
-        </nav>
     </header>
+
     <main class="main-container">
         <section class="recursos-pag">
             <h2>Conecta con tus emociones y transforma tu vida</h2>
@@ -172,16 +146,16 @@
             <h2>Conoce a nuestro equipo</h2>
             <div class="team-container">
                 <article class="about-card">
-                    <img src="../src/assets/img/foto-Leonel.jpg" alt="">
+                    <img src="../src/assets/img/foto_Macarena.png" alt="">
                     <h3>Macarena Gimenez</h3>
-                    <p class="rolEquipo">Diseño UX/UI</p>
+                    <p class="rolEquipo">Desarrollo FullStack Diseño UX/UI</p>
                     <p>“No importa lo que pase en tu vida, sé buena con las personas. Ser buena con los demás es un
                         maravilloso legado para dejar atrás”</p>
                 </article>
                 <article class="about-card">
-                    <img src="../src/assets/img/foto-Leonel.jpg" alt="">
+                    <img src="../src/assets/img/foto_Ingrid.png" alt="">
                     <h3>Ingrid Maraz</h3>
-                    <p class="rolEquipo">Desarrollo Front-End</p>
+                    <p class="rolEquipo">Scrum Master</p>
                     <p>
                         "El equilibrio emocional es la base de una vida plena."
                     </p>
@@ -190,26 +164,92 @@
                 <article class="about-card">
                     <img src="../src/assets/img/foto-Leonel.jpg" alt="">
                     <h3>Leonel Contreras</h3>
-                    <p class="rolEquipo">Desarrollo Front-End</p>
+                    <p class="rolEquipo">Desarrollador FullStack</p>
                     <p>"La inteligencia emocional es la clave del éxito personal y profesional."</p>
 
                 </article>
                 <article class="about-card">
-                    <img src="../src/assets/img/foto-Leonel.jpg" alt="">
+                    <img src="../src/assets/img/foto_Lucas.png" alt="">
                     <h3>Lucas Chero</h3>
-                    <p class="rolEquipo">Desarrollo Backend</p>
+                    <p class="rolEquipo">Project Manager</p>
                     <p>“Gestionar tus emociones es el primer paso hacia el bienestar."</p>
                 </article>
 
                 <article class="about-card">
-                    <img src="../src/assets/img/foto-Leonel.jpg" alt="">
+                    <img src="../src/assets/img/foto_Facundo.png" alt="">
                     <h3>Facundo Aranda</h3>
-                    <p class="rol-team">Desarrollo Backend</p>
+                    <p class="rol-team">Desarrollador FullStack</p>
                     <p>“Gestionar tus emociones es el primer paso hacia el bienestar."</p>
                 </article>
             </div>
         </section>
+        <section class="questions-container">
+            <h2 class="title-questions">Preguntas frecuentes</h2>
+            <div class="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>¿Qué es HEIN?</h3>
+                        <button class="accordion-btn">
+                            <img src="../src/assets/icons/arrow-icon.svg" alt="flecha">
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="accordion-info">
+                        HEIN fue fundada en 2024 por un grupo de amigos, nuestra misión es ayudar a las personas a tomar conciencia de la importancia de la gestión emocional, brindándoles las herramientas necesarias para lograrlo.
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>¿Cómo me suscribo a HEIN?</h3>
+                        <button class="accordion-btn">
+                            <img src="../src/assets/icons/arrow-icon.svg" alt="flecha">
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="accordion-info">
+                        HEIN fue fundada en 2024 por un grupo de amigos, nuestra misión es ayudar a las personas a tomar conciencia de la importancia de la gestión emocional, brindándoles las herramientas necesarias para lograrlo.
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>¿Cuál es el precio de la suscripción?</h3>
+                        <button class="accordion-btn">
+                            <img src="../src/assets/icons/arrow-icon.svg" alt="flecha">
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="accordion-info">
+                        HEIN fue fundada en 2024 por un grupo de amigos, nuestra misión es ayudar a las personas a tomar conciencia de la importancia de la gestión emocional, brindándoles las herramientas necesarias para lograrlo.
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>¿Cómo me contacto con Soporte?</h3>
+                        <button class="accordion-btn">
+                            <img src="../src/assets/icons/arrow-icon.svg" alt="flecha">
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="accordion-info">
+                        HEIN fue fundada en 2024 por un grupo de amigos, nuestra misión es ayudar a las personas a tomar conciencia de la importancia de la gestión emocional, brindándoles las herramientas necesarias para lograrlo.
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>¿Mis datos están protegidos?</h3>
+                        <button class="accordion-btn">
+                            <img src="../src/assets/icons/arrow-icon.svg" alt="flecha">
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="accordion-info">
+                        HEIN fue fundada en 2024 por un grupo de amigos, nuestra misión es ayudar a las personas a tomar conciencia de la importancia de la gestión emocional, brindándoles las herramientas necesarias para lograrlo.
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-sup">
@@ -235,24 +275,23 @@
             <hr>
             <div class="footer-inf">
                 <ul>
-                    <li>Inicio</li>
-                    <li>Diario</li>
-                    <li>Recursos</li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./html/diary.html">Diario</a></li>
+                    <li><a href="./html/features.html">Recursos</a></li>
                 </ul>
                 <ul>
-                    <li>Sobre Nosotros</li>
-                    <li>Blog</li>
-                    <li>Emociones</li>
+                    <li><a href="./html/about.html">Sobre Nosotros</a></li>
+                    <li><a href="./html/blog.html">Blog</a></li>
+                    <li><a href="./html/emotions.html">Emociones</a></li>
                 </ul>
                 <ul>
-                    <li>Terminos</li>
-                    <li>Preguntas Frecuentes</li>
-                    <li>Políticas de privacidad</li>
+                    <li><a href="index.html">Terminos</a></li>
+                    <li><a href="index.html">Preguntas Frecuentes</a></li>
+                    <li><a href="index.html">Políticas de privacidad</a></li>
                 </ul>
             </div>
         </div>
-
     </footer>
 </body>
-<script src=""></script>
+<script src="../src/scripts/home.js"></script>
 </html>

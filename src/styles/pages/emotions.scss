@@ -1,16 +1,32 @@
-@import "../utils/variables.scss";
-@import "../components/footer.scss";
-@import "../components/navtemp.scss";
-@import "../utils/mixins.scss";
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+
+.main-emotions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    h2{
+        margin-bottom: 50px;
+        color: $font-color-light;
+    }
+}
 
 .emotion-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
+    width: 80%;
+    margin: 0 auto 60px auto; 
 }
 
 .emotion-card {
-    width: 200px;
+    width: 270px;
     height: 300px;
     perspective: 1000px;
     cursor: pointer;
@@ -27,13 +43,18 @@
     }
 
     .card-front {
-        background-color: #f0f0f0;
+        background-color: $primary-color;
+        color:$accent-color;
+        border: 2px solid $accent-color;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+        box-shadow: 0px 0px 0px 3px rgba(12, 111, 249, 25%);
 
         img {
-            max-width: 100%;
+            max-width: 75%;
             max-height: 100%;
             object-fit: cover;
             border-radius: 10px;
@@ -41,7 +62,8 @@
     }
 
     .card-back {
-        background-color: #fff;
+        background-color: $accent-color;
+        color: $primary-color;
         transform: rotateY(180deg);
         display: flex;
         flex-direction: column;
@@ -49,16 +71,25 @@
         align-items: center;
         padding: 20px;
         text-align: center;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 14px 34px rgba(12, 111, 249, 25%);
 
         h3 {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-bottom: 10px;
         }
 
+        h4{
+            font-size: 0.8rem;
+        }
+
+        hr{
+            width: 90%;
+            margin-bottom: 0.2rem;
+        }
+
         p {
-            font-size: 0.9rem;
-            color: #666;
+            font-size: 0.7rem;
+            color: $primary-color;
             line-height: 1.4;
         }
     }
