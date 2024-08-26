@@ -126,6 +126,7 @@
 
             .about-card {
                 background-color: #ffffff;
+                color: #0000008a;
                 border-radius: 24px;
                 padding: 110px 24px 24px;
                 text-align: center;
@@ -149,6 +150,12 @@
 
                 .rolEquipo, .rol-team {
                     font-weight: bold;
+                }
+                .rolEquipo{
+                    font-weight: 600;
+                }
+                h3{
+                    color: #000000;
                 }
             }
         }
