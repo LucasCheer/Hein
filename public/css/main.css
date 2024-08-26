@@ -259,6 +259,7 @@ body, html {
 }
 .main-container .about-container .team-container .about-card {
   background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5411764706);
   border-radius: 24px;
   padding: 110px 24px 24px;
   text-align: center;
@@ -281,6 +282,84 @@ body, html {
 }
 .main-container .about-container .team-container .about-card .rolEquipo, .main-container .about-container .team-container .about-card .rol-team {
   font-weight: bold;
+}
+.main-container .about-container .team-container .about-card .rolEquipo {
+  font-weight: 600;
+}
+.main-container .about-container .team-container .about-card h3 {
+  color: #000000;
+}
+.main-container .questions-container {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.main-container .questions-container .title-questions {
+  color: #000000;
+  padding: 20px;
+}
+.main-container .questions-container .accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main-container .questions-container .accordion-container .accordion {
+  display: flex;
+  flex-direction: column;
+  width: 739px;
+  height: 98px;
+  padding: 24px;
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  border-radius: 16px;
+  transition: height 300ms linear;
+  overflow: hidden;
+  gap: 22px;
+}
+.main-container .questions-container .accordion-container .accordion .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 98px;
+}
+.main-container .questions-container .accordion-container .accordion .accordion-header h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+.main-container .questions-container .accordion-container .accordion .accordion-header button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  transition: transform 300ms linear;
+}
+.main-container .questions-container .accordion-container .accordion .accordion-header button:hover {
+  cursor: pointer;
+}
+.main-container .questions-container .accordion-container .accordion hr {
+  display: block;
+}
+.main-container .questions-container .accordion-container .accordion .accordion-info {
+  display: block;
+}
+.main-container .questions-container .accordion-container .activate {
+  height: 200px;
+}
+.main-container .questions-container .accordion-container .activate .accordion-header button {
+  transform: rotate(180deg);
+}
+.main-container .questions-container .accordion-container .activate hr {
+  display: block;
+}
+.main-container .questions-container .accordion-container .activate .accordion-info {
+  display: block;
 }
 
 .header {
@@ -640,10 +719,20 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.main-blog {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 0 0;
+}
+
+.article-section {
+  width: 1127px;
+}
+
 h1 {
   padding-bottom: 45px;
   text-align: left;
-  margin-left: 200px;
   font-family: "Lato", sans-serif;
   font-size: 48px;
   font-weight: bold;
@@ -711,7 +800,6 @@ h1 {
   flex-direction: row;
   align-items: flex-start;
   padding-bottom: 40px;
-  margin-left: 180px;
 }
 .tags-switcher .switcher-default {
   height: 39px;
@@ -999,7 +1087,7 @@ h1 {
 .card {
   width: 551px;
   height: 284px;
-  padding: 24px;
+  padding: 28px;
   box-sizing: border-box; /* Incluye el padding y el borde dentro de width y height */
   display: flex;
   background-color: #FFFFFF;
@@ -1096,10 +1184,15 @@ h1 {
 .part-derecha {
   width: 292px;
   height: 236px;
-  color: rgba(0, 0, 0, 0.4509803922);
+  padding: 0 0 5px 0;
+  color: rgba(0, 0, 0, 0.5411764706);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.part-derecha p {
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .contenedor-grid {
@@ -1237,6 +1330,7 @@ h1 {
 }
 
 .main {
+  padding: 60px 0 40px 0;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -1244,7 +1338,7 @@ h1 {
 }
 .main .feature-p {
   color: rgba(0, 0, 0, 0.231372549);
-  font-weight: bold;
+  font-weight: 900;
   font-size: small;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -1265,18 +1359,26 @@ h1 {
   text-align: left;
   justify-content: space-between;
   gap: 40px;
+  margin-bottom: 80px;
 }
-.main section img {
+.main section .feature-image {
+  width: 466px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main section .feature-image img {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  background-position: center;
 }
 .main section h2 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 .main section p {
   font-size: 1rem;

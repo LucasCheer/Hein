@@ -11,6 +11,7 @@ $color-4: #000000;
 //Estilos Features
 
 .main {
+    padding: 60px 0 40px 0;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@ $color-4: #000000;
 
     .feature-p {
         color: #0000003b;
-        font-weight: bold;
+        font-weight: 900;
         font-size: small;
         text-transform: uppercase;
         margin-bottom: 24px; // Espaciado adicional
@@ -40,21 +41,29 @@ $color-4: #000000;
         align-items: center;
         text-align: left;
         justify-content: space-between;
-        gap: 40px; 
+        gap: 40px;
+        margin-bottom: 80px;
 
         // Estilos generales
-        img {
-            width: 100%;
-            max-width: 400px; 
-            height: auto;
-            object-fit: cover;
+        .feature-image{
+            width: 466px;
+            height: 390px;
+            overflow: hidden;
             border-radius: 10px;
+            img {
+                width: 100%;
+                max-width: 400px; 
+                height: 100%;
+                object-fit:cover;
+                background-position: center;
+            }
         }
 
         h2 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 10px;
+            margin-top: 15px;
         }
 
         p {

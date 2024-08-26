@@ -38,7 +38,7 @@
 .card {
     width: 551px;
     height: 284px;
-    padding: 24px;
+    padding: 28px;
     box-sizing: border-box; /* Incluye el padding y el borde dentro de width y height */
     display: flex;
     background-color: $btn-text-color;
@@ -143,10 +143,15 @@
 .part-derecha{
     width: 292px ;
     height: 236px;
-    color: #00000073;
+    padding: 0 0 5px 0;
+    color: #0000008a;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+        p{
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
 }
 
 .contenedor-grid{
