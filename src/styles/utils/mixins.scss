@@ -106,3 +106,9 @@
         }
     }
 }
+
+@mixin flexbox ($justify, $alingn) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alingn;
+}
