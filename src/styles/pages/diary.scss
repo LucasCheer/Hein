@@ -1,0 +1,105 @@
+// Importaciones
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../components/nav.scss';
+@import '../components/footer.scss';
+
+
+// Estilos Diario
+.main-diary{
+    width: 100%;
+    font-family: $font-stack;
+    margin: 0;
+    padding-top: 30px;
+        .diary-section{
+            width: 100%;
+            height: 534px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 45px;
+            background-color:$primary-color;
+                .title{
+                    font-size: 48px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .subtitle{
+                    font-size: 34px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #000000a8;
+                }
+                .card-container{
+                    display: flex;
+                    justify-content: center;
+                    gap: 26px;
+                    .card{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 166px;
+                        height: 195px;
+                        border: 2px solid $font-color-light;
+                        border-radius: 12px;
+                        cursor: pointer;
+                            figure{
+                                width: 120px;
+                                    figcaption{
+                                        color: $font-color-light;
+                                        font-size: .9rem;
+                                        font-weight: 600;
+                                        text-align: center;
+                                    }
+
+                            }
+                            &:hover{
+                                border: 2px $accent-color solid;
+                                box-shadow: 0px 14px 34px rgba(12, 111, 249, 25%);
+                                    figcaption{
+                                        color: $accent-color;
+                                    }
+                                
+                            }
+                    }
+                }
+        }
+        .write-section{
+            width: 100%;
+            height: 644px;
+            background-color: $bg-color-secundary;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 54px;
+                .diary-form{
+                    width: 741px;
+                    height: 402px;
+                    font-weight: 500;
+                        textarea{
+                            font-size: 1rem;
+                            font-family: system-ui;
+                            width: 741px;
+                            height: 377px;
+                            padding: .8rem;
+                            margin: .5rem 0;
+                            border-radius: 8px;
+                        }
+                }
+                button{
+                    width: 233px;
+                    height: 44px;
+                    background-color: $btn-color;
+                    color: $font-color-logo;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    border-radius: 8px;
+                    border: none;
+                    cursor: pointer;
+                        &:hover{
+                            background-color: $btn-color-hv;
+                        }
+                }
+        }
+}

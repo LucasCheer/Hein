@@ -1,0 +1,17 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+div .form-div-sub, span a {
+    text-decoration: none;
+    color: $secundary-color;
+}
+
+.form-div-check a {
+    text-decoration: none;
+}
+
+.form-div-btn {
+    font-weight: bolder;
+    font-size: small;
+    color: #606060;
+}

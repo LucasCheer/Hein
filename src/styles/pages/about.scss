@@ -1,0 +1,165 @@
+@import "../utils/variables.scss";
+@import"../components/nav.scss";
+@import"../components/footer.scss";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap"); 
+
+.main-about{
+    margin: 100px 0 140px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-stack;
+    background-color: $primary-color;
+    gap: 120px;
+}
+
+.sobre-nosotros {   
+    margin: 0 auto;
+    color: $secundary-color;
+    font-size: 1.5em;
+        .titulo-nosotros {
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+}
+
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 27px;
+    padding: 20px;
+}
+
+
+/* Caracteristicas de todas las cards de cada miembro del equipo */
+.card {
+    width: 551px;
+    height: 284px;
+    padding: 28px;
+    box-sizing: border-box; /* Incluye el padding y el borde dentro de width y height */
+    display: flex;
+    flex-direction: row;
+    background-color: $btn-text-color;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+
+        .nombre-rol {
+            width: 177.5px;
+            height: 52px;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 8px;
+            padding: 0;
+
+                // Nombre:
+                h2 {
+                    height: 21px;
+                    align-self: stretch;
+                    flex-grow: 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.05;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $font-color-dark;
+                    }
+                
+                // Rol:
+                h3 {
+                    height: 23px;
+                    align-self: stretch;
+                    flex-grow: 0;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: -0.32px;
+                    text-align: left;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+        }
+
+}
+
+
+.card a {
+    width: 171px;
+    height: 39px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+    text-align: left;
+    color: $font-color-light;
+    background-color: $bg-color;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    color:$btn-text-color;
+    background-color: $accent-color;
+}
+
+.part-izquierda{
+    width: 232px;
+    height:234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    gap: 20px;
+        figure{
+        width: 140px;
+        height: 140px;
+        margin-top: -80px;
+        img{
+            width: 140px;
+            height: 140px;
+        }
+        } 
+        img {
+        width: 166px;
+        height: 70px;
+        }
+
+}
+
+.part-derecha{
+    width: 292px ;
+    height: 236px;
+    padding: 0 0 5px 0;
+    color: #0000008a;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+        p{
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-rows: repeat(3, 284px);
+    grid-column-gap: 25px;
+    grid-row-gap: 80px;
+}
