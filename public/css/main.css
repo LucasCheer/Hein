@@ -252,6 +252,7 @@ li a:hover i {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 .main-container .recursos-pag h2 {
   color: #000000;
@@ -265,6 +266,7 @@ li a:hover i {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 24px;
   width: 80%;
+  max-width: 1400px;
   margin: auto;
 }
 .main-container .recursos-pag .card-container article {
@@ -321,6 +323,7 @@ li a:hover i {
   border: none;
   margin-top: 64px;
   align-items: center;
+  text-decoration: none;
 }
 .main-container .recursos-pag .btn-cta:hover {
   background-color: #005ee5;
@@ -341,6 +344,7 @@ li a:hover i {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 24px;
+  max-width: 1400px;
   width: 80%;
   margin: auto;
 }
@@ -1888,6 +1892,7 @@ li a:hover i {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   width: 80%;
+  max-width: 1400px;
   margin: 0 auto 60px auto;
 }
 
