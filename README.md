@@ -1,6 +1,6 @@
 <!-- Documentación del Proyecto HEIN -->
 
 # HEIN
+#### "Gestionar tus emociones es el primer paso hacia tu bienestar" 
 
-Hein, Proyecto para Fundacion Pescar | JP Morgan | Artech
-Pagina web para la gestion emocional.
+Nuestra misión es ayudar a las personas a tomar conciencia de la importancia de la gestión emocional, brindándoles las herramientas necesarias para lograrlo. Este es un proyecto final para *Fundación Pescar* y *JP Morgan*, aplicando los conocimientos aprendidos en la capacitacion laboral de Desarrollo Web Full Stack.
