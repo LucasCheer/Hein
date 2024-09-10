@@ -7,7 +7,7 @@ function filterArticles(category){
         if (category === 'All' || articleCategory === category) {
             article.style.display = 'block'; 
         } else {
-                article.style.display = 'none'; 
+            article.style.display = 'none'; 
         }
 
     });
