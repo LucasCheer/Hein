@@ -5,9 +5,10 @@ function filterArticles(category){
         const articleCategory = article.getAttribute('data-category')
         
         if (category === 'All' || articleCategory === category) {
-            article.style.display = 'block'; 
+            article.style.display = 'block';
         } else {
             article.style.display = 'none'; 
+            
         }
 
     });
@@ -15,8 +16,9 @@ function filterArticles(category){
     const buttons = document.querySelectorAll('.tags-switcher button');
 
     buttons.forEach(button => {
-        if (buttons.textContent === category || (category === 'All' && buttons.textContent === 'Todos los articulos')){
-            button.classList.add('active')
+        if (button.textContent.trim() === category || (category === 'All' && button.textContent.trim() === 'Todos los artículos')){
+            button.classList.add('active');
+        
         }
         else{
             button.classList.remove('active')
