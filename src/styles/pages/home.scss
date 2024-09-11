@@ -1,8 +1,8 @@
-@import "../utils/variables.scss";
-@import "../components/nav.scss";
-@import "../components/hero.scss";
-@import "../components/footer.scss";
-@import "../utils/mixins.scss";
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+@import "../components/_nav.scss";
+@import "../components/_hero.scss";
+@import "../components/_footer.scss";
 
 .main-container {
     font-family: "Lato", sans-serif;
