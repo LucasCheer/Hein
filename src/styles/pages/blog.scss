@@ -87,14 +87,12 @@ h1 {
             color: $btn-text-color;   
         }
         &.active {
-            background-color: $switcher-color-selected; // Color cuando el botón está activo
+            background-color: $switcher-color-selected;
             color: $btn-text-color;
         }
     }
     .switcher-all-articles{
         width: 180px;
-        color: $btn-text-color;
-        @include articleSwitcher($switcher-color-selected);
     }
 }
 
