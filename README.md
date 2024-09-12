@@ -16,7 +16,7 @@ Nuestra misión es ayudar a las personas a tomar conciencia de la importancia de
 - [@contrerasleonel](https://www.github.com/contrerasleonel)
 - [@FacundoAranda](https://www.github.com/FacundoAranda)
 
-## 🛠 Skills
+## 🛠 Tecnologías Utilizadas
 - HTML
 - CSS
 - SASS
