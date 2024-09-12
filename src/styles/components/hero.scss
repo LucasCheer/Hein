@@ -5,6 +5,9 @@
 .main-content {
     display: flex;
     align-items: center;
+    width: 1140px;
+    height: 630px;
+    margin: 0 auto;
     padding: 50px;
     background-color: $primary-color;
 }
@@ -15,13 +18,13 @@
 
 .image-placeholder {
     flex: 1;
-    height: 300px;
+    height: 400px;
     @include flexbox(center, center);
     font-weight: bold;
 }
 
 .image-placeholder img {
-    height: 350px;
+    height: 420px;
     width: auto;
 }
 
