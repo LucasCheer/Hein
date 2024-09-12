@@ -1,9 +1,22 @@
 @import '../utils/_variables.scss';
 @import '../utils/_mixins.scss';
 
-div .form-div-sub, span a {
-    text-decoration: none;
+.header_login {
+    height: 650px;
+}
+
+.login, .register {
+    transition: all 0.8s ease;
+}
+
+.heide {
+    display: none;
+}
+
+.form-div-a {
     color: $secundary-color;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .form-div-check a {
