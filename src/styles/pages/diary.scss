@@ -34,7 +34,7 @@
                     display: flex;
                     justify-content: center;
                     gap: 26px;
-                    .card{
+                    .card-diary{
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -43,6 +43,7 @@
                         border: 2px solid $font-color-light;
                         border-radius: 12px;
                         cursor: pointer;
+                        transition-duration: 200ms;
                             figure{
                                 width: 120px;
                                     figcaption{
@@ -54,13 +55,25 @@
 
                             }
                             &:hover{
-                                border: 2px $accent-color solid;
-                                box-shadow: 0px 14px 34px rgba(12, 111, 249, 25%);
+                                box-sizing: border-box;
+                                border: 4px solid #0c6ff99f;
+                                box-shadow: 0px 0px 3px rgba(12, 111, 249, 0.25);
                                     figcaption{
                                         color: $accent-color;
                                     }
                                 
                             }
+                    }
+                    .selected{
+                        box-sizing: border-box;
+                        border: 4px solid #0c6ff99f;
+                        box-shadow: 0px 0px 3px rgba(12, 111, 249, 0.25);
+                            figure{
+                                figcaption{
+                                    color: $accent-color;
+                                }
+                            }
+                        
                     }
                 }
         }
