@@ -1996,9 +1996,22 @@ li a:hover i {
   transform: rotateY(0deg);
 }
 
-div .form-div-sub, span a {
-  text-decoration: none;
+.header_login {
+  height: 650px;
+}
+
+.login, .register {
+  transition: all 0.8s ease;
+}
+
+.heide {
+  display: none;
+}
+
+.form-div-a {
   color: #FF7E1D;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .form-div-check a {
@@ -2009,6 +2022,64 @@ div .form-div-sub, span a {
   font-weight: bolder;
   font-size: small;
   color: #606060;
+}
+
+.header-payment {
+  height: 800px;
+}
+.header-payment .heidden {
+  display: none;
+}
+
+.container-hero-pay {
+  margin-top: 10px;
+}
+.container-hero-pay .hero-pay-ul li {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.container-hero-pay .hero-pay-ul li i {
+  margin: 3px;
+  font-size: x-large;
+  color: #01B73F;
+}
+.container-hero-pay .div-hero-pay-img {
+  display: flex;
+  justify-content: center;
+}
+.container-hero-pay .div-hero-pay-img img {
+  width: 60%;
+  height: 60%;
+}
+
+.container_Pay_Method {
+  height: 500px;
+}
+.container_Pay_Method .content-pay button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+.container_Pay_Method .content-pay button .pay-img {
+  margin-left: 5%;
+}
+.container_Pay_Method .content-pay button .button-i-mercadopago {
+  padding-left: 313px;
+}
+.container_Pay_Method .content-pay button .button-i-cards {
+  padding-left: 235px;
+}
+.container_Pay_Method .content-pay button .button-i-paypal {
+  padding-left: 405px;
+}
+.container_Pay_Method .btn-pay-paypal button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pay-login {
+  height: 600px;
 }
 
 /*# sourceMappingURL=main.css.map */
