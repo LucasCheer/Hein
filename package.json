@@ -15,6 +15,7 @@
     "sass": "^1.77.8"
   },
   "dependencies": {
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "mssql": "^11.0.1"
   }
 }
