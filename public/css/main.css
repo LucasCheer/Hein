@@ -2092,4 +2092,263 @@ li a:hover i {
   height: 600px;
 }
 
+.footer {
+  width: 100%;
+  height: 460px;
+  color: #FFFFFF;
+  background-color: black;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-container {
+  width: 1128px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-container .footer-sup {
+  width: 1064px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-container .footer-sup figure {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.footer .footer-container .footer-sup figure img {
+  width: 40px;
+  height: 45px;
+}
+.footer .footer-container .footer-sup figure figcaption {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer .footer-container .footer-sup .socials-container {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .footer-sup .socials-container .logo {
+  width: 34px;
+}
+.footer .footer-container hr {
+  width: 1064px;
+}
+.footer .footer-container .footer-inf {
+  width: 1064px;
+  height: 123px;
+  display: flex;
+  gap: 3.5rem;
+}
+.footer .footer-container .footer-inf ul {
+  list-style: none;
+}
+.footer .footer-container .footer-inf ul li {
+  padding: 0.9rem 0;
+}
+.footer .footer-container .footer-inf ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #9E9E9E;
+}
+.footer .footer-container .footer-inf ul li a:hover {
+  color: #FFFFFF;
+}
+
+header nav {
+  background-color: #ffffff;
+  padding: 20px;
+}
+header nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9E9E9E;
+}
+header nav .nav-item-a,
+header nav .nav-item-inicio,
+header nav .navbarDropdown {
+  display: flex;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+header nav .nav-item-a:hover,
+header nav .nav-item-inicio:hover,
+header nav .navbarDropdown:hover {
+  color: #FF7E1D;
+}
+header nav .nav-item-a {
+  color: #ffb178;
+}
+header nav .nav-item-a:hover {
+  color: #FF7E1D;
+}
+header nav .nav-item-inicio {
+  color: #FF7E1D;
+}
+header nav .nav-item-inicio:hover {
+  color: #FF7E1D;
+}
+header nav .navbarDropdown {
+  padding: 0.375rem 0.75rem;
+  margin: 0px;
+  margin-left: 10px;
+  border-radius: 0.25rem;
+  color: #ffb178;
+}
+header nav .navbarDropdown:hover {
+  color: #ffffff;
+  background-color: #0d6efd;
+  font-weight: 400;
+  line-height: 1.5;
+  box-shadow: #000000;
+}
+header nav .navbarDropdown:focus {
+  background-color: #0d6efd;
+  color: #FAF7F2;
+}
+
+.dropdown-menu {
+  border-radius: 0.6rem;
+  border-top-left-radius: 0px;
+  padding: 0px;
+  box-shadow: 2px 8px 15px 4px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 2px 8px 15px 4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 2px 8px 15px 4px rgba(0, 0, 0, 0.16);
+}
+
+.dropdown-item {
+  color: #FF7E1D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-item:hover {
+  color: #FF7E1D;
+  background-color: #FAF7F2;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+li a i {
+  display: none;
+  font-size: xx-small;
+  color: #FF7E1D;
+}
+
+li a:hover i {
+  display: inline;
+  color: #FF7E1D;
+}
+
+.main-calendar {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  min-height: 100vh;
+  background: #faf7f2;
+}
+.main-calendar .wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.main-calendar .wrapper .header-calendar {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+.main-calendar .wrapper .header-calendar .icons {
+  display: flex;
+}
+.main-calendar .wrapper .header-calendar .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.main-calendar .wrapper .header-calendar .icons span:last-child {
+  margin-right: -10px;
+}
+.main-calendar .wrapper .header-calendar .icons span:hover {
+  background: #f2f2f2;
+}
+.main-calendar .wrapper .header-calendar .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.main-calendar .wrapper .calendar {
+  padding: 20px;
+}
+.main-calendar .wrapper .calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.main-calendar .wrapper .calendar ul li {
+  color: #333;
+  width: 14.2857142857%;
+  font-size: 1.07rem;
+}
+.main-calendar .wrapper .calendar ul li.inactive {
+  color: #aaa;
+}
+.main-calendar .wrapper .calendar ul li.active {
+  color: #fff;
+}
+.main-calendar .wrapper .calendar ul li.active::before {
+  background: #FF7E1D;
+}
+.main-calendar .wrapper .calendar ul li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-calendar .wrapper .calendar ul li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+.main-calendar .wrapper .calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.main-calendar .wrapper .calendar .days {
+  margin-bottom: 20px;
+}
+.main-calendar .wrapper .calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
