@@ -647,7 +647,7 @@ li a:hover i {
   justify-content: center;
   gap: 26px;
 }
-.main-diary .diary-section .card-container .card {
+.main-diary .diary-section .card-container .card-diary {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -656,21 +656,31 @@ li a:hover i {
   border: 2px solid #9E9E9E;
   border-radius: 12px;
   cursor: pointer;
+  transition-duration: 200ms;
 }
-.main-diary .diary-section .card-container .card figure {
+.main-diary .diary-section .card-container .card-diary figure {
   width: 120px;
 }
-.main-diary .diary-section .card-container .card figure figcaption {
+.main-diary .diary-section .card-container .card-diary figure figcaption {
   color: #9E9E9E;
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
 }
-.main-diary .diary-section .card-container .card:hover {
-  border: 2px #0C6FF9 solid;
-  box-shadow: 0px 14px 34px rgba(12, 111, 249, 0.25);
+.main-diary .diary-section .card-container .card-diary:hover {
+  box-sizing: border-box;
+  border: 4px solid rgba(12, 111, 249, 0.6235294118);
+  box-shadow: 0px 0px 3px rgba(12, 111, 249, 0.25);
 }
-.main-diary .diary-section .card-container .card:hover figcaption {
+.main-diary .diary-section .card-container .card-diary:hover figcaption {
+  color: #0C6FF9;
+}
+.main-diary .diary-section .card-container .selected {
+  box-sizing: border-box;
+  border: 4px solid rgba(12, 111, 249, 0.6235294118);
+  box-shadow: 0px 0px 3px rgba(12, 111, 249, 0.25);
+}
+.main-diary .diary-section .card-container .selected figure figcaption {
   color: #0C6FF9;
 }
 .main-diary .write-section {
