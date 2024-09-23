@@ -1,0 +1,30 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.header_login {
+    height: 650px;
+}
+
+.login, .register {
+    transition: all 0.8s ease;
+}
+
+.heide {
+    display: none;
+}
+
+.form-div-a {
+    color: $secundary-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-div-check a {
+    text-decoration: none;
+}
+
+.form-div-btn {
+    font-weight: bolder;
+    font-size: small;
+    color: #606060;
+}
