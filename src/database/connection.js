@@ -30,5 +30,3 @@ export const getConnection = async () => {
         console.log("Error al conectarse a la base de datos");
     }
 };
-
-getConnection();
