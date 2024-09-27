@@ -1,0 +1,118 @@
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+@import "../components/_footer.scss";
+@import "../components/_nav.scss";
+
+.main-calendar {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    background: #faf7f2;
+
+    .wrapper {
+        width: 450px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+
+        .header-calendar {
+            display: flex;
+            align-items: center;
+            padding: 25px 30px 10px;
+            justify-content: space-between;
+
+            .icons {
+                display: flex;
+
+                span {
+                    height: 38px;
+                    width: 38px;
+                    margin: 0 1px;
+                    cursor: pointer;
+                    color: #878787;
+                    text-align: center;
+                    line-height: 38px;
+                    font-size: 1.9rem;
+                    user-select: none;
+                    border-radius: 50%;
+
+                    &:last-child {
+                        margin-right: -10px;
+                    }
+
+                    &:hover {
+                        background: #f2f2f2;
+                    }
+                }
+            }
+
+            .current-date {
+                font-size: 1.45rem;
+                font-weight: 500;
+            }
+        }
+
+        .calendar {
+            padding: 20px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                text-align: center;
+
+                li {
+                    color: #333;
+                    width: calc(100% / 7);
+                    font-size: 1.07rem;
+
+                    &.inactive {
+                        color: #aaa;
+                    }
+
+                    &.active {
+                        color: #fff;
+
+                        &::before {
+                            background: #FF7E1D;
+                        }
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        left: 50%;
+                        top: 50%;
+                        height: 40px;
+                        width: 40px;
+                        z-index: -1;
+                        border-radius: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:not(.active):hover::before {
+                        background: #f2f2f2;
+                    }
+                }
+            }
+
+            .weeks li {
+                font-weight: 500;
+                cursor: default;
+            }
+
+            .days {
+                margin-bottom: 20px;
+
+                li {
+                    z-index: 1;
+                    cursor: pointer;
+                    position: relative;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
