@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Title -->
+    <title>Perfil de Usuario</title>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../src/assets/icons/hein-logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body> 
+    <header id="CargarNav"></header>
+
+    <main class="body-profile">
+        <div class="profile-wrapper">
+
+            <!-- Sección de la imagen de perfil -->
+            <div class="profile-container">
+
+                <!-- Imagen de perfil o ícono predeterminado -->
+                <div class="profile-image" id="profileImage">
+                    <!-- Imagen predeterminada -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="100" height="100">
+                        <path d="M12 12c2.7 0 4.8-2.2 4.8-4.8S14.7 2.4 12 2.4 7.2 4.6 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                    </svg>
+                </div>
+                <div class="overlay" id="overlay">
+
+                    <!-- Ícono de lápiz SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+                        <path d="M 18 2 L 15.585938 4.4140625 L 19.585938 8.4140625 L 22 6 L 18 2 z M 14.076172 5.9238281 L 3 17 L 3 21 L 7 21 L 18.076172 9.9238281 L 14.076172 5.9238281 z"/>
+                    </svg>
+                </div>
+                <input type="file" accept="image/*" id="file-input" title="Selecciona una imagen para subir">
+            </div>
+    
+            <!-- Sección de información y formulario -->
+            <div class="info-form">
+                <!-- Información de usuario -->
+                <div class="user-info">
+                    <h3 class="username" id="displayUsername">Nombre de Usuario</h3>
+                    <p class="email" id="displayEmail">email@ejemplo.com</p>
+                </div>
+    
+            <!-- Formulario de edición -->
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" id="username" value="Nombre de Usuario" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" value="12345678910" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Nombre y Apellido</label>
+                    <input type="text" id="fullname" value="Nombre Apellido" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="email@ejemplo.com" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de Teléfono</label>
+                    <input type="tel" id="phone" value="123-456-7890" disabled>
+                </div>
+            </div>
+    
+                <!-- Botones de editar/guardar y cancelar -->
+                <div class="buttons-container">
+                    <button class="edit-button" id="editButton">Editar perfil</button>
+                    <button class="cancel-button" id="cancelButton">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sup">
+                <figure>
+                    <img src="../../src/assets/icons/hein-logo.png" alt="Logo Hein">
+                    <figcaption>
+                        Hein
+                    </figcaption>
+                </figure>
+                <p>&copy; Powered by grupo Hein 2024</p>
+                <div class="socials-container">
+                    <a href="https://facebook.com/" rel="noopener" target="_blank">
+                        <img class="logo" src="../../src/assets/icons/facebook-logo.svg" alt="Facebook Logo">
+                    </a>
+                    <a href="https://instagram.com/" rel="noopener" target="_blank">
+                        <img class="logo" src="../../src/assets/icons/ig-logo.svg" alt="Instagram Logo">
+                    </a>
+                    <a href="https://x.com/" rel="noopener" target="_blank">
+                        <img class="logo" src="../../src/assets/icons/twitter-logo.svg" alt="Twitter Logo">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-inf">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./diary.html">Diario</a></li>
+                    <li><a href="./features.html">Recursos</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./about.html">Sobre Nosotros</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./emotions.html">Emociones</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../index.html">Terminos</a></li>
+                    <li><a href="../index.html">Preguntas Frecuentes</a></li>
+                    <li><a href="../index.html">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/profile_user.js"></script>
+</body>
+</html>
