@@ -449,6 +449,64 @@ li a:hover i {
   display: block;
 }
 
+.subscription_container {
+  display: flex;
+  justify-content: center;
+  background-color: #FAF7F2;
+  height: 600px;
+  margin: 44px;
+}
+.subscription_container .infosub-container .subtext-container {
+  text-align: center;
+  padding-bottom: 24px;
+}
+.subscription_container .infosub-container .subtext-container .sub-maintitle {
+  font-size: 34px;
+  font-weight: bold;
+  color: #4B4C4D;
+}
+.subscription_container .suboptions-container .suboption {
+  height: 155px;
+  width: 700px;
+  padding: 1.5rem;
+  border: 0.063rem solid;
+  border-radius: 0.75rem;
+  color: #413D45;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  line-height: 30px;
+}
+.subscription_container .suboptions-container .option1 {
+  background-color: #FFCE00;
+  border-color: #FFCE00;
+}
+.subscription_container .suboptions-container .option2 {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.subscription_container .sub-smalltext {
+  text-align: center;
+  width: 700px;
+  margin-bottom: 2rem;
+  color: rgb(68, 66, 63);
+  font-size: 14px;
+}
+.subscription_container .sub-btn {
+  height: 51px;
+  width: 115px;
+  border-radius: 8px;
+  background-color: #0C6FF9;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px 10px;
+  border: none;
+  width: 200px;
+  border-radius: 24px;
+}
+
 header nav {
   background-color: #ffffff;
   padding: 20px;
@@ -2150,7 +2208,9 @@ li a:hover i {
 .categorydate {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1.5rem;
+  margin: 16px 0;
 }
 .categorydate .category_btn {
   height: 21px;
@@ -2173,6 +2233,10 @@ li a:hover i {
   opacity: 60%;
 }
 
+.postauthor {
+  display: flex;
+  align-items: center;
+}
 .postauthor .img_postauthor {
   border-radius: 50%;
 }
@@ -2197,11 +2261,15 @@ li a:hover i {
   opacity: 60%;
 }
 
+.text_content {
+  margin-top: 44px;
+}
 .text_content .important_p {
   font-family: "Merriweather", sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: bold;
+  padding: 20px 0;
 }
 .text_content .post_text {
   font-family: "Merriweather", sans-serif;
@@ -2221,6 +2289,7 @@ li a:hover i {
   height: 257px;
   border-radius: 16px;
   padding: 44px;
+  margin: 20px 0;
 }
 .blog_quote .main_quote {
   font-family: "Merriweather", sans-serif;
@@ -2238,15 +2307,15 @@ li a:hover i {
   opacity: 33%;
 }
 
-.relatedarticlescontainer {
+.relatedarticles_container {
   height: 573px;
   background-color: #FAF7F2;
+  padding: 96px 0;
 }
 
 .related_title {
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 96px;
+  margin-bottom: 40px;
 }
 
 .postcomments_container {
@@ -2255,8 +2324,7 @@ li a:hover i {
   display: flex;
   justify-content: center;
 }
-
-.comment_container {
+.postcomments_container .comment_container {
   width: 744px;
   height: 300px;
   border-radius: 16px;
@@ -2264,11 +2332,15 @@ li a:hover i {
   box-shadow: rgba(112, 135, 165, 0.2) 1px 1px 7px 0px;
   padding: 24px;
 }
-.comment_container .maintext_register {
+.postcomments_container .comment_container .maintext_register {
   color: #0C6FF9;
   cursor: pointer;
+  text-decoration: none;
 }
-.comment_container .comment_textfield {
+.postcomments_container .comment_container .maintext_register:hover {
+  color: #005EE5;
+}
+.postcomments_container .comment_container .comment_textfield {
   height: 250px;
   border: 1px solid var(--tc-gray-40);
   border-radius: 5px;
@@ -2281,7 +2353,14 @@ li a:hover i {
   padding: 15px 15px 80px;
   width: 100%;
 }
-.comment_container .comment_btn {
+.postcomments_container .comment_container .comment_textfield:hover {
+  border: 1px solid #0C6FF9;
+}
+.postcomments_container .comment_container .comment_textfield:focus {
+  border: 1px solid #0C6FF9;
+  box-shadow: 0px 0px 0px 3px rgba(12, 111, 249, 0.25);
+}
+.postcomments_container .comment_container .comment_btn {
   height: 51px;
   width: 115px;
   border-radius: 8px;
@@ -2295,6 +2374,9 @@ li a:hover i {
   border: none;
   width: 190px;
   border-radius: 28px;
+}
+.postcomments_container .comment_container .comment_btn:hover {
+  background-color: #005EE5;
 }
 
 /*# sourceMappingURL=main.css.map */
