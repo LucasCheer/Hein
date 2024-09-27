@@ -1,7 +1,7 @@
-@import "../utils/variables.scss";
-@import "../components/footer.scss";
-@import "../components/nav.scss";
-@import "../utils/mixins.scss";
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+@import "../components/_footer.scss";
+@import "../components/_nav.scss";
 
 
 .main-emotions{
@@ -24,6 +24,7 @@
     grid-template-columns: repeat(4, 1fr); 
     grid-gap: 20px; 
     width: 80%;
+    max-width: 1400px;
     margin: 0 auto 60px auto; 
 }
 
