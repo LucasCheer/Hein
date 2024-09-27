@@ -244,6 +244,9 @@
     height: 600px;
     margin: 44px;
     .infosub-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .subtext-container {
             text-align: center;
             padding-bottom: 24px;

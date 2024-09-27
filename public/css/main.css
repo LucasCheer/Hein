@@ -456,6 +456,11 @@ li a:hover i {
   height: 600px;
   margin: 44px;
 }
+.subscription_container .infosub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .subscription_container .infosub-container .subtext-container {
   text-align: center;
   padding-bottom: 24px;
