@@ -1,0 +1,242 @@
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+@import "../components/_nav.scss";
+@import "../components/_hero.scss";
+@import "../components/_footer.scss";
+
+.main-container {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0;
+    gap: 0px;
+
+    .recursos-pag {
+        background-color: #ffffff;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        h2 {
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            margin-top: 24px;
+            margin-bottom: 64px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 24px;
+            width: 80%;
+            max-width: 1400px;
+            margin: auto;
+
+            article {
+                border-radius: 24px;
+                display: grid;
+                gap: 16px;
+
+                &.card-resources {
+                    background-color: #f5f5f5;
+                    padding: 64px 24px 24px;
+                    position: relative;
+
+                    div {
+                        color: #ffffff;
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -5%;
+                        left: 5%;
+
+                        &#book-simbol {
+                            background-color: #b98520;
+                            box-shadow: 5px 10px 24px -4px #b98520;
+                        }
+
+                        &#article-simbol {
+                            background-color: #f72859;
+                            box-shadow: 5px 10px 24px -4px #f72859;
+                        }
+
+                        &#done-simbol {
+                            background-color: #9e28dc;
+                            box-shadow: 5px 10px 24px -4px #9e28dc;
+                        }
+
+                        &#groups-simbol {
+                            background-color: #000000;
+                            box-shadow: 5px 10px 24px -4px #000000;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: #000000;
+                opacity: 0.5;
+            }
+
+            a {
+                color: #000000;
+            }
+        }
+
+        .btn-cta {
+            background-color: #0c6ff9;
+            color: #ffffff;
+            padding: 20px 16px;
+            border-radius: 10px;
+            margin: 64px auto 58px;
+            border: none;
+            margin-top: 64px;
+            align-items: center;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #005ee5;
+            }
+        }
+    }
+
+    .about-container {
+        background-color: #faf7f2;
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+        h2 {
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            margin-top: 24px;
+            margin-bottom: 64px;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 24px;
+            max-width: 1400px;
+            width: 80%;
+            margin: auto;
+
+            .about-card {
+                background-color: #ffffff;
+                color: #0000008a;
+                border-radius: 24px;
+                padding: 110px 24px 24px;
+                text-align: center;
+                align-items: center;
+                position: relative;
+                display: grid;
+                gap: 16px;
+
+                img {
+                    border-radius: 50%;
+                    height: 110px;
+                    width: 110px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: -5%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    box-shadow: 0px 23px 34px 0px #0000002a;
+                }
+
+                .rolEquipo, .rol-team {
+                    font-weight: bold;
+                }
+                .rolEquipo{
+                    font-weight: 600;
+                }
+                h3{
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .questions-container{
+        width: 100%;
+        background-color:$bg-color-secundary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 70px 0;
+            .title-questions{
+                color: $font-color-dark;
+                padding: 20px;
+            }
+            .accordion-container{
+                display: flex;
+                flex-direction: column;
+                gap:12px;
+                    .accordion{
+                        display: flex;
+                        flex-direction: column;
+                        width: 739px;
+                        max-height: 98px;
+                        padding: 24px;
+                        border: 2px solid rgba(0, 0, 0, 0.212);
+                        border-radius: 16px;
+                        transition: max-height 400ms linear;
+                        overflow: hidden;
+                        gap: 22px;
+                            .accordion-header{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                height: 98px;
+                                    h3{
+                                        color: $font-color-dark;
+                                        font-size: 24px;
+                                        font-weight: bold;
+                                    }
+                                    button{
+                                        all:unset;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 50%;
+                                        background-color: black;
+                                        transition: transform 300ms linear;
+                                            &:hover{
+                                                cursor: pointer;
+                                            }
+                                    }
+                            }
+                            hr{
+                                display: block;
+                            }
+                            .accordion-info{
+                                display:block;
+                            }
+                    }
+                    .activate{
+                        max-height: 1000px;
+                            .accordion-header{
+                                    button{
+                                        transform: rotate(180deg);
+                                    }
+                            }
+                            hr{
+                                display: block;
+                            }
+                            .accordion-info{
+                                display: block;
+                            }
+                    }
+            }
+    }
+}
