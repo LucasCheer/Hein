@@ -459,6 +459,69 @@ header nav .navbarDropdown:focus {
   display: block;
 }
 
+.subscription_container {
+  display: flex;
+  justify-content: center;
+  background-color: #FAF7F2;
+  height: 600px;
+  margin: 44px;
+}
+.subscription_container .infosub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscription_container .infosub-container .subtext-container {
+  text-align: center;
+  padding-bottom: 24px;
+}
+.subscription_container .infosub-container .subtext-container .sub-maintitle {
+  font-size: 34px;
+  font-weight: bold;
+  color: #4B4C4D;
+}
+.subscription_container .suboptions-container .suboption {
+  height: 155px;
+  width: 700px;
+  padding: 1.5rem;
+  border: 0.063rem solid;
+  border-radius: 0.75rem;
+  color: #413D45;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  line-height: 30px;
+}
+.subscription_container .suboptions-container .option1 {
+  background-color: #FFCE00;
+  border-color: #FFCE00;
+}
+.subscription_container .suboptions-container .option2 {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.subscription_container .sub-smalltext {
+  text-align: center;
+  width: 700px;
+  margin-bottom: 2rem;
+  color: rgb(68, 66, 63);
+  font-size: 14px;
+}
+.subscription_container .sub-btn {
+  height: 51px;
+  width: 115px;
+  border-radius: 8px;
+  background-color: #0C6FF9;
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px 10px;
+  border: none;
+  width: 200px;
+  border-radius: 24px;
+}
+
 header nav {
   background-color: #ffffff;
   padding: 20px;
