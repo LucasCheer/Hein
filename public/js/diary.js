@@ -13,7 +13,7 @@ cards.forEach((card) => {
 document.addEventListener("DOMContentLoaded", () => {
     const textArea = document.getElementById('textarea');
     
-    fetch("http://localhost:3000/registros/2")
+    fetch("http://localhost:3000/registros/8")
     .then(response => response.json())
     .then(data => {
         // Asigna la descripción al textarea
