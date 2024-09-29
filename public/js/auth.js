@@ -37,9 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault(); 
 
         const username = document.getElementById("username-register").value;
+        const name = document.getElementById("name-register").value;
         const email = document.getElementById("email-register").value;
         const password = document.getElementById("password-register").value;
-        const confirmPassword = document.getElementById("password-register").value;
+        const confirmPassword = document.getElementById("confirmpassword-register").value;
 
         if (password !== confirmPassword) {
             spanRegister.textContent = "Las contraseñas no coinciden.";
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ NombreUsuario: username, Email: email, Contrasenia: password }),
+                body: JSON.stringify({ NombreUsuario: username, Nombre: name, Email: email, Contrasenia: password }),
             });
 
             const data = await response.json();
