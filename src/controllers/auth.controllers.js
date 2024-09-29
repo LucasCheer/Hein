@@ -1,11 +1,12 @@
 import { getConnection } from "../database/connection.js";
 import sql from 'mssql';
 import bcrypt from 'bcrypt';
-import { SALT_ROUND } from '../config.js'; 
+import jwt from 'jsonwebtoken'
+import { SALT_ROUND } from '../config.js';
 
 export const registerUser = async (req, res) => {
     const { NombreUsuario, Nombre, Contrasenia, Email } = req.body;
-    
+
     try {
         const pool = await getConnection();
 
@@ -15,7 +16,7 @@ export const registerUser = async (req, res) => {
         }
 
         if (typeof NombreUsuario != "string") {
-            return res.status(400).json({ message: "El nombre de usuario debe ser un string"})
+            return res.status(400).json({ message: "El nombre de usuario debe ser un string" })
         }
 
         // Verificar si el nombre de usuario ya existe
@@ -34,7 +35,7 @@ export const registerUser = async (req, res) => {
         }
 
         if (typeof Contrasenia != "string") {
-            return res.status(400).json({ message: "La contraseña debe ser un string"})
+            return res.status(400).json({ message: "La contraseña debe ser un string" })
         }
 
         // Encriptar la contraseña
@@ -64,6 +65,10 @@ export const registerUser = async (req, res) => {
 export const loginUser = async (req, res) => {
     const { NombreUsuario, Contrasenia } = req.body;
 
+    if (!NombreUsuario || !Contrasenia) {
+        return res.status(400).json({ message: "Faltan credenciales." });
+    }
+
     try {
         const pool = await getConnection();
         const user = await pool
@@ -79,17 +84,34 @@ export const loginUser = async (req, res) => {
         const isValid = await bcrypt.compare(Contrasenia, user.recordset[0].Contrasenia);
         if (!isValid) {
             return res.status(400).json({ message: "Contraseña incorrecta." });
-        }   
-
-        if (!NombreUsuario || !Contrasenia) {
-            return res.status(400).json({ message: "Faltan credenciales." });
         }
-        
+
+        // Supuestamente va afuera
+        // if (!NombreUsuario || !Contrasenia) {
+        //     return res.status(400).json({ message: "Faltan credenciales." });
+        // }
+
+        //generacion del token JWT
+        const token = jwt.sign({ id: user.recordset[0].IdUsuario, username: user.recordset[0].NombreUsuario },
+            SECRET_JWT_KEY, {
+            expiresIn: '1h'
+        })
+
         const { Contrasenia: _, ...publicUser } = user.recordset[0];
 
-        res.json(publicUser);
+        //cookies configuradas para la sesion
+        res
+            .cookie('access_token', token, {
+                httpOnly: true, //la cookie solo se puede acceder en el servidor
+                secure: process.env.NODE_ENV === 'production', //la cookie solo se pueda acceder en https
+                sameSite: 'strict', // la cookie solo se puede acceder en el mismo dominio
+                maxAge: 1000 * 60 * 60
+            })
+            .json(publicUser);
+            //.json({message: "Inicio de sesion exitoso"})
     } catch (error) {
         console.error("Error al iniciar sesión:", error);
         res.status(500).json({ message: "Error al iniciar sesión." });
     }
 };
+
