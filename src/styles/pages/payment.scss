@@ -1,13 +1,35 @@
 @import '../utils/variables.scss';
 @import '../utils/mixins.scss';
 
+
 .header-payment {
+    background-color: #FAF7F2;
     height: 800px;
         .heidden {
         display: none;
         }
 }
 
+//Personalizacion del desplegable perfil del avatar
+.dropdown-item-profile {
+    color: black;
+    &:hover {
+        color: $secundary-color;
+        background-color: #FAF7F2;
+    }
+}
+
+.div-mode-lda {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #FAF7F2;
+    color: $secundary-color;
+    &:hover {
+        color: $secundary-color;
+        background-color: #FAF7F2;
+    }
+}
 
 .container-hero-pay {
     margin-top: 10px;

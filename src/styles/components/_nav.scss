@@ -36,12 +36,9 @@ header {
             }
         }
 
-        .nav-item-inicio {
+        .nav-item_active {
             color: $secundary-color;
-
-            &:hover {
-                color: $secundary-color;
-            }
+            text-decoration: none;
         }
 
         .navbarDropdown {
@@ -75,10 +72,9 @@ header {
     -moz-box-shadow: 2px 8px 15px 4px rgba(0,0,0,0.16);
 }
 
-.dropdown-item {
+.dropdown-item-recursos {
     color: $secundary-color;
     @include flexbox(space-between, center);
-
     &:hover {
         color: $secundary-color;
         background-color: #FAF7F2;
@@ -88,13 +84,22 @@ header {
     }
 }
 
-li a i {
-    display: none;
-    font-size: xx-small;
-    color: $secundary-color;
+.li-recursos a {
+    i {
+        display: none;
+        font-size: xx-small;
+        color: $secundary-color;
+    }
+    &:hover i {
+        display: inline;
+        color: $secundary-color;
+    }
 }
 
-li a:hover i {
-    display: inline;
+.dropdown-item-profile {
     color: $secundary-color;
+    &:hover {
+        color: $secundary-color;
+        background-color: #FAF7F2;
+    }
 }
