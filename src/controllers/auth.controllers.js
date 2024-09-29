@@ -2,7 +2,7 @@ import { getConnection } from "../database/connection.js";
 import sql from 'mssql';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
-import { SALT_ROUND } from '../config.js';
+import {SECRET_JWT_KEY, SALT_ROUND } from '../config.js';
 
 export const registerUser = async (req, res) => {
     const { NombreUsuario, Nombre, Contrasenia, Email } = req.body;
