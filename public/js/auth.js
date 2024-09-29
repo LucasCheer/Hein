@@ -22,14 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
 
             if (response.ok) {
-                spanLogin.textContent = "Inicio de sesión exitoso!";
-                window.location.href = "diary.html"; 
+                spanLogin.textContent = "Inicio de sesión exitoso! Ingresando..."
+                spanLogin.style.color = 'green';
+                setTimeout(() => {
+                    window.location.href = "../index.html"
+                }, 2000)
             } else {
         
                 spanLogin.textContent = data.message || "Error en el inicio de sesión";
+                spanLogin.style.color = 'red';
             }
         } catch (error) {
             spanLogin.textContent = "Error de red. Por favor intenta más tarde.";
+            spanLogin.style.color = 'red';
+
         }
     });
 
@@ -44,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (password !== confirmPassword) {
             spanRegister.textContent = "Las contraseñas no coinciden.";
+            spanRegister.style.color = 'red'
             return;
         }
 
@@ -60,11 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.ok) {
                 spanRegister.textContent = "Registro exitoso! Puedes iniciar sesión ahora.";
+                spanRegister.style.color = 'green'
             } else {
                 spanRegister.textContent = data.message || "Error en el registro";
+                spanRegister.style.color = 'red'
             }
         } catch (error) {
             spanRegister.textContent = "Error de red. Por favor intenta más tarde.";
+            spanRegister.style.color = 'red'
         }
     });
 });
