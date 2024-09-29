@@ -44,7 +44,7 @@ export const createRegister = async (req, res) => {
         const pool = await getConnection()
         const result = await pool
             .request()
-            .input('IdRegistro', sql.Int, req.params.IdRegistro)
+            .input('IdRegistro', sql.Int, req.params.id)
             .input('FechaIngreso', sql.DateTime, req.body.FechaIngreso)
             .input('Descripcion', sql.VarChar, req.body.Descripcion)
             .input('IdUsuario', sql.Int, req.body.IdUsuario)
