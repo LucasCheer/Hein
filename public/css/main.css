@@ -2035,6 +2035,10 @@ li a:hover i {
   color: #606060;
 }
 
+#footer-login {
+  margin-top: 80px;
+}
+
 .header-payment {
   height: 800px;
 }
