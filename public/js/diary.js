@@ -1,5 +1,6 @@
 // Variables
 const cards = document.querySelectorAll('.card-diary');
+const buttonAddResgister = document.getElementById('button-send')
 
 cards.forEach((card) => {
     card.addEventListener('click', () => {
@@ -10,6 +11,7 @@ cards.forEach((card) => {
     });
 });
 
+//Cargar el contenido de un dia en especifico 
 document.addEventListener("DOMContentLoaded", () => {
     const textArea = document.getElementById('textarea');
     
@@ -35,4 +37,47 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => {
         console.error(error);
     });
+});
+
+//Enviar un nuevo registro de emocion
+
+buttonAddResgister.addEventListener('click', () => {
+    const textArea = document.getElementById('textarea').value; // Obtiene el texto del textarea
+    let cardSelected = null; // Variable para almacenar la carta seleccionada
+    let fechaDeIngreso = new Date();
+    console.log(fechaDeIngreso)
+
+    // Iteramos sobre cada carta para encontrar la que está seleccionada
+    cards.forEach(card => {
+        // Si la carta tiene la clase 'selected' o un atributo específico (puedes manejarlo como prefieras)
+        if (card.classList.contains('selected')) {
+            // Obtenemos el valor de 'data-value' de la carta seleccionada
+            cardSelected = card.getAttribute('data-value');
+        }
+    });
+
+    // Verificamos si hay una carta seleccionada antes de proceder
+    if (cardSelected) {
+        fetch('http://localhost:3000/registros', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                Descripcion: textArea, // Texto del textarea
+                IdEmocion: cardSelected, // ID de la carta
+                IdUsuario: 5,
+                FechaIngreso: fechaDeIngreso,
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Registro exitoso:', data);
+        })
+        .catch(error => {
+            console.error('Error al registrar:', error);
+        });
+    } else {
+        console.error('No hay ninguna carta seleccionada');
+    }
 });
