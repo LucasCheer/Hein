@@ -75,11 +75,16 @@ export const loginUser = async (req, res) => {
             return res.status(400).json({ message: "El nombre de usuario no existe." });
         }
 
+
         const isValid = await bcrypt.compare(Contrasenia, user.recordset[0].Contrasenia);
         if (!isValid) {
             return res.status(400).json({ message: "Contraseña incorrecta." });
-        }
+        }   
 
+        if (!NombreUsuario || !Contrasenia) {
+            return res.status(400).json({ message: "Faltan credenciales." });
+        }
+        
         const { Contrasenia: _, ...publicUser } = user.recordset[0];
 
         res.json(publicUser);
