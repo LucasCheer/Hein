@@ -9,7 +9,7 @@ export function cardAccordion(title, info){
                     <div class="accordion-header">
                         <h3>${title}</h3>
                         <button class="accordion-btn">
-                            <img src="../src/assets/icons/arrow-icon.svg" alt="flecha">
+                            <img src="./assets/icons/arrow-icon.svg" alt="flecha">
                         </button>
                     </div>
                     <hr>
