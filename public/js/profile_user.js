@@ -141,3 +141,32 @@ function validateFields() {
 
     return isValid; // Retornar si es válido o no
 }
+
+const getInfo = () => {
+
+}
+
+document.addEventListener("DOMContentLoaded", (getInfo) => {
+
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+    const fullname = document.getElementById('fullname');
+    const displayUsername = document.getElementById('displayUsername');
+    const displayEmail = document.getElementById('displayEmail');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    
+    fetch("http://localhost:3000/usuarios/2")
+    .then(response => response.json())
+    .then(data => {
+        displayUsername.textContent =  `${data.Nombre}`
+        displayEmail.textContent = `${data.Email}`
+        username.value = `${data.NombreUsuario}`
+        fullname.value = `${data.Nombre}`
+        email.value = `${data.Email}`
+
+    })
+    .catch(error => {
+        console.error(error);
+    });
+  });

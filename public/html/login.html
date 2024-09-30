@@ -123,18 +123,14 @@
                     <div class="my-0 text-center mb-2 form-div-sub">
                         <span>¿Es tu primera vez en Hein? <a class="form-div-a" id="sign-in">Registrate gratis</a></span>
                     </div>
-                    <form action="/usuarios" method="GET" class="needs-validation" novalidate>
+                    <form action="" class="needs-validation" id="login-form" novalidate>
                         <div class="mb-4 form-div-btn">
-                            <label for="nameUser" class="form-label">NOMBRE DE USUARIO</label>
-                            <input type="text" name="nameUser" id="nameUser" class="form-control" placeholder="Julian Alvarez" required>
-                        </div>
-                        <div class="mb-4 form-div-btn">
-                            <label for="email" class="form-label">CORREO ELECTRÓNICO</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="julianalvarez@gmail.com" required>
+                            <label for="username" class="form-label">NOMBRE USUARIO</label>
+                            <input type="username" name="username" id="username-login" class="form-control" placeholder="usuariohein" required>
                         </div>
                         <div class="mb-4 form-div-btn">
                             <label for="password" class="form-label">CONTRASEÑA</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="●●●●●●●●●●●●" required>
+                            <input type="password" name="password" id="password-login" class="form-control" placeholder="●●●●●●●●●●●●" required>
                         </div>
                         <div class="my-3">
                             <span><a class="form-div-a" href="#">¿Olvidaste tu contraseña?</a></span>
@@ -144,7 +140,8 @@
                             <label class="form-check-label" for="invalidCheck">Acepto los <a href="#">Términos y condiciones</a> de HEIN y estoy de acuerdo con su <a href="#">Política de privacidad.</a></label>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+                            <button type="submit" class="btn btn-primary" id="btn-login">INICIAR SESIÓN</button>
+                            <span id="span-login"></span>
                         </div>
                                             <!-- Login con Google -->
                     <div class="container w-100 my-3">
@@ -165,36 +162,41 @@
                 </div>
     
                 <!-- Formilario registrate -->
-                <div class="register container container_login align-items-baseline w-50 mt-5 mb-5 p-3 rounded-2 shadow bg-white heide">
+                <div class="register container container_login align-items-baseline w-50 mt-5 mb-6 p-3 rounded-2 shadow bg-white heide">
                     <div class="row text-center">
                         <h1 class="text-center pb-2">Crear cuenta</h1>
                     </div>
                     <div class="my-0 text-center mb-2 form-div-sub">
                         <span>¿Ya tenes cuenta en Hein? <a class="form-div-a" id="sign-up"> Iniciar sesión</a></span>
                     </div>
-                    <form action="/usuarios" method="POST" class="needs-validation" novalidate>
+                    <form action="" class="needs-validation" id="register-form" novalidate>
                         <div class="mb-4 form-div-btn">
-                            <label for="nameUser" class="form-label">NOMBRE DE USUARIO</label>
-                            <input type="text" name="nameUser" id="nameUser" class="form-control" placeholder="Julian Alvarez" required>
+                            <label for="username" class="form-label">NOMBRE USUARIO</label>
+                            <input type="text" name="username" id="username-register" class="form-control" placeholder="macahein" required>
+                        </div>
+                        <div class="mb-4 form-div-btn">
+                            <label for="username" class="form-label">NOMBRE</label>
+                            <input type="text" name="name" id="name-register" class="form-control" placeholder="Macarena Gimenez" required>
                         </div>
                         <div class="mb-4 form-div-btn">
                             <label for="email" class="form-label">CORREO ELECTRÓNICO</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="julianalvarez@gmail.com" required>
+                            <input type="email" name="email" id="email-register" class="form-control" placeholder="julianalvarez@gmail.com" required>
                         </div>
                         <div class="mb-4 form-div-btn">
                             <label for="password" class="form-label">CREAR CONTRASEÑA</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="●●●●●●●●●●●●" required>
+                            <input type="password" name="password" id="password-register" class="form-control" placeholder="●●●●●●●●●●●●" required>
                         </div>
                         <div class="mb-4 form-div-btn">
                             <label for="password" class="form-label">REPETIR CONTRASEÑA</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="●●●●●●●●●●●●" required>
+                            <input type="password" name="password" id="confirmpassword-register" class="form-control" placeholder="●●●●●●●●●●●●" required>
                         </div>
                         <div class="mb-3 form-check form-div-check">
                             <input class="form-check-input needs-validation" type="checkbox" value="" id="invalidCheck" required>
                             <label class="form-check-label" for="invalidCheck">Acepto los <a href="#">Términos y condiciones</a> de HEIN y estoy de acuerdo con su <a href="#">Política de privacidad.</a></label>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">CREAR CUENTA</button>
+                            <button type="submit" class="btn btn-primary" id="btn-register">CREAR CUENTA</button>
+                            <span id="span-register"></span>
                         </div>
                     </form>
                     <!-- Login con Google -->
@@ -215,7 +217,7 @@
                 </div>
             </section>
         </header>
-    <footer class="footer">
+    <footer class="footer" id="footer-login">
         <div class="footer-container">
             <div class="footer-sup">
                 <figure>
@@ -259,5 +261,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/auth.js"></script>
 </body>
 </html>

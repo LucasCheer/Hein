@@ -2128,6 +2128,10 @@ header nav .navbarDropdown:focus {
   color: #606060;
 }
 
+#footer-login {
+  margin-top: 80px;
+}
+
 .header-payment {
   background-color: #FAF7F2;
   height: 800px;
