@@ -4,6 +4,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
 import {SECRET_JWT_KEY, SALT_ROUND } from '../config.js';
 
+
 export const registerUser = async (req, res) => {
     const { NombreUsuario, Nombre, Contrasenia, Email } = req.body;
 
@@ -92,19 +93,20 @@ export const loginUser = async (req, res) => {
         // }
 
         //generacion del token JWT
-        const token = jwt.sign({ id: user.recordset[0].IdUsuario, username: user.recordset[0].NombreUsuario },
-            SECRET_JWT_KEY, {
-            expiresIn: '1h'
-        })
+        const token = jwt.sign(
+            { id: user.recordset[0].IdUsuario, username: user.recordset[0].NombreUsuario },
+            SECRET_JWT_KEY,
+             {expiresIn: '1h'}
+            );
 
         const { Contrasenia: _, ...publicUser } = user.recordset[0];
 
         //cookies configuradas para la sesion
         res
             .cookie('access_token', token, {
-                httpOnly: true, //la cookie solo se puede acceder en el servidor
-                secure: process.env.NODE_ENV === 'production', //la cookie solo se pueda acceder en https
+                httpOnly: false, //la cookie solo se puede acceder en el servidor
                 sameSite: 'strict', // la cookie solo se puede acceder en el mismo dominio
+                secure: false, //la cookie solo se pueda acceder en https
                 maxAge: 1000 * 60 * 60
             })
             .json(publicUser);
@@ -114,4 +116,10 @@ export const loginUser = async (req, res) => {
         res.status(500).json({ message: "Error al iniciar sesión." });
     }
 };
+
+export const logoutUser = async(req, res) =>{
+    res
+        .clearCookie('acces_token')
+        .json({ message: 'Cerraste sesion correctamente'})
+}
 
