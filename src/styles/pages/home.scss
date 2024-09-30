@@ -240,3 +240,59 @@
             }
     }
 }
+
+.subscription_container {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    height: 600px;
+    margin: 44px;
+    .infosub-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .subtext-container {
+            text-align: center;
+            padding-bottom: 24px;
+            .sub-maintitle {
+                font-size: $h2-font-size;
+                font-weight: $h2-font-weight;
+                color: #4B4C4D;
+            }
+        }
+    }
+    .suboptions-container {
+        .suboption {
+            height: 155px;
+            width: 700px;
+            padding: 1.5rem;
+            border: 0.063rem solid;
+            border-radius: 0.75rem;
+            color: #413D45;
+            text-align: left;
+            margin-bottom: 1.5rem;
+            line-height: 30px;
+            }
+            .option1 {
+                background-color: $card-option-color;
+                border-color: $card-option-border;
+            }
+            .option2 {
+                background-color: $bg-color-secundary;
+                border-color: $bg-color-secundary;
+            }
+        }
+        .sub-smalltext {
+            text-align: center;
+            width: 700px;
+            margin-bottom: 2rem;
+            color: rgb(68, 66, 63);
+            font-size: 14px;
+        }
+        .sub-btn {
+            @include ctaButton($btn-color, $btn-text-color);
+            width: 200px;
+            border-radius: 24px;
+        }
+    }
+
