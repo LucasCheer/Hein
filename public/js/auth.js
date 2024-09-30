@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 spanLogin.textContent = "Inicio de sesión exitoso! Ingresando..."
                 spanLogin.style.color = 'green';
                 setTimeout(() => {
-                    window.location.href = "../index.html"
+                    window.location.href = "../index2.html"
                 }, 2000)
             } else {
         
