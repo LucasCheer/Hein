@@ -1,7 +1,7 @@
-@import '../utils/variables.scss';
-@import '../components/footer.scss';
-@import '../components/nav.scss';
-@import '../utils/mixins.scss';
+@import '../utils/_variables.scss';
+@import '../utils/_mixins.scss';
+@import '../components/_footer.scss';
+@import '../components/_nav.scss';
 
 *{
     margin: 0;
@@ -76,7 +76,7 @@ h1 {
     flex-direction: row;
     align-items: flex-start;
     padding-bottom: 40px;
-    .switcher-default{
+    .switcher-default, .switcher-all-articles{
         @include articleSwitcher($switcher-color-default);
         width: 144px;
         &:hover{
@@ -86,11 +86,13 @@ h1 {
             background-color: $switcher-color-selected;
             color: $btn-text-color;   
         }
+        &.active {
+            background-color: $switcher-color-selected;
+            color: $btn-text-color;
+        }
     }
     .switcher-all-articles{
         width: 180px;
-        color: $btn-text-color;
-        @include articleSwitcher($switcher-color-selected);
     }
 }
 
@@ -111,6 +113,37 @@ h1 {
 
 .article-listing{
     padding: 90px 0 75px 0;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    .article-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+        gap: 1.5rem;
+        .blog-article{ 
+            @include articleCards;
+
+            img {
+                border-radius: 12px 12px 0 0;
+            }
+            .article-text{
+                height: 169px;
+                padding: 16px 16px;
+                h3 {
+                    padding: 12px 0 12px 0;
+                }
+            }
+            .txt-btn-article { 
+                @include textButton;
+            } 
+        }
+    }
+    
 }
 
 .article-row{

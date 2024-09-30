@@ -1,8 +1,8 @@
-@import "../utils/variables.scss";
-@import "../components/nav.scss";
-@import "../components/hero.scss";
-@import "../components/footer.scss";
-@import "../utils/mixins.scss";
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+@import "../components/_nav.scss";
+@import "../components/_hero.scss";
+@import "../components/_footer.scss";
 
 .main-container {
     font-family: "Lato", sans-serif;
@@ -18,6 +18,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
 
         h2 {
             color: #000000;
@@ -32,6 +33,7 @@
             grid-template-columns: repeat(4, 1fr);
             column-gap: 24px;
             width: 80%;
+            max-width: 1400px;
             margin: auto;
 
             article {
@@ -98,6 +100,7 @@
             border: none;
             margin-top: 64px;
             align-items: center;
+            text-decoration: none;
 
             &:hover {
                 background-color: #005ee5;
@@ -122,6 +125,7 @@
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             column-gap: 24px;
+            max-width: 1400px;
             width: 80%;
             margin: auto;
 
@@ -167,7 +171,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px 0;
+        padding: 50px 0 70px 0;
             .title-questions{
                 color: $font-color-dark;
                 padding: 20px;
@@ -180,11 +184,11 @@
                         display: flex;
                         flex-direction: column;
                         width: 739px;
-                        height: 98px;
+                        max-height: 98px;
                         padding: 24px;
                         border: 2px solid rgba(0, 0, 0, 0.212);
                         border-radius: 16px;
-                        transition: height 300ms linear;
+                        transition: max-height 400ms linear;
                         overflow: hidden;
                         gap: 22px;
                             .accordion-header{
@@ -220,7 +224,7 @@
                             }
                     }
                     .activate{
-                        height: 200px;
+                        max-height: 1000px;
                             .accordion-header{
                                     button{
                                         transform: rotate(180deg);
@@ -236,3 +240,59 @@
             }
     }
 }
+
+.subscription_container {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    height: 600px;
+    margin: 44px;
+    .infosub-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .subtext-container {
+            text-align: center;
+            padding-bottom: 24px;
+            .sub-maintitle {
+                font-size: $h2-font-size;
+                font-weight: $h2-font-weight;
+                color: #4B4C4D;
+            }
+        }
+    }
+    .suboptions-container {
+        .suboption {
+            height: 155px;
+            width: 700px;
+            padding: 1.5rem;
+            border: 0.063rem solid;
+            border-radius: 0.75rem;
+            color: #413D45;
+            text-align: left;
+            margin-bottom: 1.5rem;
+            line-height: 30px;
+            }
+            .option1 {
+                background-color: $card-option-color;
+                border-color: $card-option-border;
+            }
+            .option2 {
+                background-color: $bg-color-secundary;
+                border-color: $bg-color-secundary;
+            }
+        }
+        .sub-smalltext {
+            text-align: center;
+            width: 700px;
+            margin-bottom: 2rem;
+            color: rgb(68, 66, 63);
+            font-size: 14px;
+        }
+        .sub-btn {
+            @include ctaButton($btn-color, $btn-text-color);
+            width: 200px;
+            border-radius: 24px;
+        }
+    }
+

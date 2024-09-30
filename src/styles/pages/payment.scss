@@ -1,0 +1,84 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+
+.header-payment {
+    background-color: #FAF7F2;
+    height: 800px;
+        .heidden {
+        display: none;
+        }
+}
+
+//Personalizacion del desplegable perfil del avatar
+.dropdown-item-profile {
+    color: black;
+    &:hover {
+        color: $secundary-color;
+        background-color: #FAF7F2;
+    }
+}
+
+.div-mode-lda {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #FAF7F2;
+    color: $secundary-color;
+    &:hover {
+        color: $secundary-color;
+        background-color: #FAF7F2;
+    }
+}
+
+.container-hero-pay {
+    margin-top: 10px;
+        .hero-pay-ul li {
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+                i {
+                    margin: 3px;
+                    font-size: x-large;
+                    color: #01B73F;
+                }
+        }
+            .div-hero-pay-img {
+                display: flex;
+                justify-content: center;
+                    img {
+                        width: 60%;
+                        height: 60%;
+                    }
+            }
+
+}
+
+.container_Pay_Method {
+    height: 500px;
+        .content-pay button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            align-items: center;
+                .pay-img {
+                    margin-left: 5%;
+                }
+                    .button-i-mercadopago {
+                        padding-left: 313px;
+                    }
+                    .button-i-cards {
+                        padding-left: 235px;
+                    }
+                    .button-i-paypal {
+                        padding-left: 405px;
+                    }
+        }
+    .btn-pay-paypal button {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.pay-login {
+    height: 600px;
+}

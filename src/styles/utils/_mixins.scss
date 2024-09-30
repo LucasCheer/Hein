@@ -12,6 +12,13 @@
     line-height: $p-line-height;
 }
 
+@mixin tagline {
+    font-family: $font-stack;
+    font-size: $tagline-font-size;
+    line-height: $tagline-line-height;
+    font-weight: $tagline-font-weight;
+}
+
 @mixin ctaButton ($btn-color, $btn-text-color) {
     height: 51px;
     width: 115px;
@@ -25,6 +32,22 @@
     padding: 16px 10px;
     border: none;
 }
+
+@mixin blogFont {
+    font-family: $blog-font;
+    font-size: $blog-font-size;
+    line-height: $blog-line-height;
+}
+
+@mixin blogboldFont {
+    font-family: $blog-font-bold;
+    font-size: $blog-font-size;
+    line-height: $blog-line-height;
+    font-weight: $blog-bold-font-weight;
+}
+
+
+//
 
 @mixin textButton {
     //modificar variables

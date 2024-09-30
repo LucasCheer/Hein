@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../src/assets/icons/hein-logo.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/hein-logo.png" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../../src/scripts/nav.js"></script>
+    <script src="../js/nav.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
@@ -25,41 +25,41 @@
             <h2 class="title">Registra tus emociones</h2>
             <h4 class="subtitle">¿Cómo te sentiste hoy?</h4>
             <div class="card-container">
-                <div class="card">
+                <div class="card-diary" data-value="5">
                     <figure>
-                        <img src="../../src/assets/icons/angry-emoji-icon.svg" alt="Ilustración Enojado">
+                        <img src="../assets/icons/angry-emoji-icon.svg" alt="Ilustración Enojado">
                         <figcaption>
                             ENOJADO
                         </figcaption>
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card-diary" data-value="2">
                     <figure>
-                        <img src="../../src/assets/icons/sad-emoji-icon.svg" alt="Ilustración Triste">
+                        <img src="../assets/icons/sad-emoji-icon.svg" alt="Ilustración Triste">
                         <figcaption>
                             TRISTE
                         </figcaption>
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card-diary" data-value="3">
                     <figure>
-                        <img src="../../src/assets/icons/meh-emoji-icon.svg" alt="Ilustración Indiferente">
+                        <img src="../assets/icons/meh-emoji-icon.svg" alt="Ilustración Indiferente">
                         <figcaption>
                             INDIFERENTE
                         </figcaption>
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card-diary" data-value="4">
                     <figure>
-                        <img src="../../src/assets/icons/happy-emoji-icon.svg" alt="Ilustración Bien">
+                        <img src="../assets/icons/happy-emoji-icon.svg" alt="Ilustración Bien">
                         <figcaption>
                             BIEN
                         </figcaption>
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card-diary" data-value="1">
                     <figure>
-                        <img src="../../src/assets/icons/so-happy-emoji-icon.svg" alt="Ilustración Feliz">
+                        <img src="../assets/icons/so-happy-emoji-icon.svg" alt="Ilustración Feliz">
                         <figcaption>
                             FELIZ
                         </figcaption>
@@ -72,14 +72,14 @@
                 <label for="">¿QUÉ PENSAMIENTO O SITUACIÓN DESENCADENO ESTÁ EMOCIÓN?</label>
                 <textarea name="textarea" id="textarea" placeholder="Comentá cómo te sentiste..."></textarea>
             </form>
-            <button>AGREGAR</button>
+            <button id="button-send">AGREGAR</button>
         </section>
     </main>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-sup">
                 <figure>
-                    <img src="../../src/assets/icons/hein-logo.png" alt="Logo Hein">
+                    <img src="../assets/icons/hein-logo.png" alt="Logo Hein">
                     <figcaption>
                         Hein
                     </figcaption>
@@ -87,13 +87,13 @@
                 <p>&copy; Powered by grupo Hein 2024</p>
                 <div class="socials-container">
                     <a href="https://facebook.com/" rel="noopener" target="_blank">
-                        <img class="logo" src="../../src/assets/icons/facebook-logo.svg" alt="Facebook Logo">
+                        <img class="logo" src="../assets/icons/facebook-logo.svg" alt="Facebook Logo">
                     </a>
                     <a href="https://instagram.com/" rel="noopener" target="_blank">
-                        <img class="logo" src="../../src/assets/icons/ig-logo.svg" alt="Instagram Logo">
+                        <img class="logo" src="../assets/icons/ig-logo.svg" alt="Instagram Logo">
                     </a>
                     <a href="https://x.com/" rel="noopener" target="_blank">
-                        <img class="logo" src="../../src/assets/icons/twitter-logo.svg" alt="Twitter Logo">
+                        <img class="logo" src="../assets/icons/twitter-logo.svg" alt="Twitter Logo">
                     </a>
                 </div>
             </div>
@@ -117,5 +117,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/diary.js"></script>
 </body>
 </html>
