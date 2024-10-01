@@ -1,7 +1,7 @@
 // Selecciona el contenedor de los días, la fecha actual y los íconos de navegación (anterior y siguiente)
 const daysTag = document.querySelector(".days"),
-      currentDate = document.querySelector(".current-date"),
-      prevNextIcon = document.querySelectorAll(".icons span");
+    currentDate = document.querySelector(".current-date"),
+    prevNextIcon = document.querySelectorAll(".icons span");
 
 // Obtiene la fecha actual, el año y el mes
 let date = new Date(),
@@ -10,7 +10,7 @@ let date = new Date(),
 
 // Almacena los nombres completos de todos los meses en un array
 const months = ["January", "February", "March", "April", "May", "June", "July",
-                "August", "September", "October", "November", "December"];
+    "August", "September", "October", "November", "December"];
 
 // Función para renderizar (dibujar) el calendario
 // Modifica la función renderCalendar para agregar clases condicionales
@@ -19,7 +19,7 @@ const renderCalendar = () => {
         lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
         lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
         lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
-    
+
     let liTag = "";
 
     // Días del mes anterior
@@ -30,7 +30,7 @@ const renderCalendar = () => {
     // Días del mes actual
     for (let i = 1; i <= lastDateofMonth; i++) {
         let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
-        
+
         // Condicional para aplicar colores a días específicos (ejemplo: días 5, 10 y 15)
         let isSpecialDay = (i === 5 || i === 10 || i === 15) ? "pastel" : "";
 
@@ -44,6 +44,18 @@ const renderCalendar = () => {
 
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
     daysTag.innerHTML = liTag;
+
+
+    // Agrega el evento de clic a los días con la clase "pastel"
+    const pastelDays = document.querySelectorAll(".pastel");
+    pastelDays.forEach(day => {
+        day.addEventListener("click", () => {
+            const dayNumber = day.getAttribute("data-day");
+
+            window.location.href = `diary.html?day=${dayNumber}&month=${currMonth + 1}&year=${currYear}`;
+        });
+    });
+
 }
 // Llama a la función para renderizar el calendario por primera vez
 renderCalendar();
