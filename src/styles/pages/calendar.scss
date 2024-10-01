@@ -116,3 +116,13 @@
         }
     }
 }
+.pastel {
+    background-color: rgba(173, 216, 230, 0.5); /* Azul pastel con transparencia */
+    color: rgba(0, 0, 0, 0.8); /* Texto más oscuro */
+    border-radius: 50%; /* Hacer que el fondo del día sea circular */
+    padding: 10px;
+}
+
+.pastel:hover {
+    background-color: rgba(173, 216, 230, 0.7); /* Aumenta la opacidad en hover */
+}

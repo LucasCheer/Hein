@@ -42,8 +42,10 @@ cards.forEach((card) => {
 //Enviar un nuevo registro de emocion
 
 buttonAddResgister.addEventListener('click', () => {
+    const message = document.getElementById('message');
     const textArea = document.getElementById('textarea').value; // Obtiene el texto del textarea
-    let cardSelected = null; // Variable para almacenar la carta seleccionada
+    let cardSelected = null;
+     // Variable para almacenar la carta seleccionada
     let fechaDeIngreso = new Date();
     console.log(fechaDeIngreso)
 
@@ -73,9 +75,13 @@ buttonAddResgister.addEventListener('click', () => {
         .then(response => response.json())
         .then(data => {
             console.log('Registro exitoso:', data);
+            message.innerHTML = 'Registro exitoso';
+            message.style.color = 'green';
         })
         .catch(error => {
             console.error('Error al registrar:', error);
+            message.innerHTML = 'Error al registrar';
+            message.style.color = 'red';
         });
     } else {
         console.error('No hay ninguna carta seleccionada');

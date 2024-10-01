@@ -752,7 +752,7 @@ header nav .navbarDropdown:focus {
 }
 .main-diary .diary-section .card-container .card-diary:hover {
   box-sizing: border-box;
-  border: 4px solid rgba(12, 111, 249, 0.6235294118);
+  border: 3px solid rgba(12, 111, 249, 0.6235294118);
   box-shadow: 0px 0px 3px rgba(12, 111, 249, 0.25);
 }
 .main-diary .diary-section .card-container .card-diary:hover figcaption {
@@ -760,8 +760,8 @@ header nav .navbarDropdown:focus {
 }
 .main-diary .diary-section .card-container .selected {
   box-sizing: border-box;
-  border: 4px solid rgba(12, 111, 249, 0.6235294118);
-  box-shadow: 0px 0px 3px rgba(12, 111, 249, 0.25);
+  border: 1px solid #0C6FF9;
+  box-shadow: 0px 0px 0px 4px rgba(12, 111, 249, 0.25);
 }
 .main-diary .diary-section .card-container .selected figure figcaption {
   color: #0C6FF9;
@@ -782,13 +782,30 @@ header nav .navbarDropdown:focus {
   font-weight: 500;
 }
 .main-diary .write-section .diary-form textarea {
+  all: unset;
   font-size: 1rem;
   font-family: system-ui;
   width: 741px;
   height: 377px;
   padding: 0.8rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   border-radius: 8px;
+  border: 1px solid #949494;
+}
+.main-diary .write-section .diary-form textarea:hover {
+  border: 1px solid #0C6FF9;
+}
+.main-diary .write-section .diary-form textarea:focus {
+  all: unset;
+  font-size: 1rem;
+  font-family: system-ui;
+  width: 741px;
+  height: 377px;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #0C6FF9;
+  box-shadow: 0px 0px 0px 3px rgba(12, 111, 249, 0.25);
 }
 .main-diary .write-section button {
   width: 233px;
@@ -2507,6 +2524,17 @@ header nav .navbarDropdown:focus {
   cursor: pointer;
   position: relative;
   margin-top: 30px;
+}
+
+.pastel {
+  background-color: rgba(173, 216, 230, 0.5); /* Azul pastel con transparencia */
+  color: rgba(0, 0, 0, 0.8); /* Texto más oscuro */
+  border-radius: 50%; /* Hacer que el fondo del día sea circular */
+  padding: 10px;
+}
+
+.pastel:hover {
+  background-color: rgba(173, 216, 230, 0.7); /* Aumenta la opacidad en hover */
 }
 
 .footer {
