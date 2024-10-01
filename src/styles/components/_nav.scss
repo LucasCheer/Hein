@@ -3,7 +3,10 @@
 @import '../utils/mixins.scss'; // Importo Mixins
 
 header {
+    width: 100%;
     nav {
+        position: fixed;
+        top: 0; 
         background-color: #ffffff;
         padding: 20px;
 

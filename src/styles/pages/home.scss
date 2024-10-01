@@ -245,7 +245,7 @@
     display: flex;
     justify-content: center;
     background-color: $primary-color;
-    height: 600px;
+    height: 650px;
     margin: 44px;
     .infosub-container {
         display: flex;
@@ -289,10 +289,19 @@
             color: rgb(68, 66, 63);
             font-size: 14px;
         }
-        .sub-btn {
-            @include ctaButton($btn-color, $btn-text-color);
-            width: 200px;
-            border-radius: 24px;
+        .btn-cta {
+            background-color: #0c6ff9;
+            color: #ffffff;
+            padding: 20px 16px;
+            border-radius: 10px;
+            margin: 40px auto 50px;
+            border: none;
+            align-items: center;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #005ee5;
+            }
         }
     }
 

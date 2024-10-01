@@ -11,6 +11,7 @@
 
 body {
   min-height: 0;
+  margin-top: 80px;
 }
 
 p {
@@ -26,7 +27,12 @@ body, html {
   scroll-behavior: smooth;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -463,7 +469,7 @@ header nav .navbarDropdown:focus {
   display: flex;
   justify-content: center;
   background-color: #FAF7F2;
-  height: 600px;
+  height: 650px;
   margin: 44px;
 }
 .subscription_container .infosub-container {
@@ -506,23 +512,26 @@ header nav .navbarDropdown:focus {
   color: rgb(68, 66, 63);
   font-size: 14px;
 }
-.subscription_container .sub-btn {
-  height: 51px;
-  width: 115px;
-  border-radius: 8px;
-  background-color: #0C6FF9;
-  font-family: "Lato", sans-serif;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 16px 10px;
+.subscription_container .btn-cta {
+  background-color: #0c6ff9;
+  color: #ffffff;
+  padding: 20px 16px;
+  border-radius: 10px;
+  margin: 40px auto 50px;
   border: none;
-  width: 200px;
-  border-radius: 24px;
+  align-items: center;
+  text-decoration: none;
+}
+.subscription_container .btn-cta:hover {
+  background-color: #005ee5;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -869,7 +878,12 @@ header nav .navbarDropdown:focus {
   color: #FFFFFF;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -1215,7 +1229,12 @@ h1 {
   opacity: 0.6;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -1606,7 +1625,12 @@ header nav .navbarDropdown:focus {
   color: #FFFFFF;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -1913,7 +1937,12 @@ header nav .navbarDropdown:focus {
   color: #FFFFFF;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -2284,7 +2313,12 @@ header nav .navbarDropdown:focus {
   color: #FFFFFF;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -2384,7 +2418,7 @@ header nav .navbarDropdown:focus {
   align-items: center;
   padding: 0 10px;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   background: #faf7f2;
 }
 .main-calendar .wrapper {
@@ -2548,7 +2582,12 @@ header nav .navbarDropdown:focus {
   color: #FFFFFF;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -2827,7 +2866,12 @@ header nav .navbarDropdown:focus {
   background-color: #005EE5;
 }
 
+header {
+  width: 100%;
+}
 header nav {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -2996,7 +3040,7 @@ header nav .navbarDropdown:focus {
 }
 
 .body-profile {
-  height: 106vh;
+  height: 90vh;
   font-family: "Lato", sans-serif;
   display: flex;
   justify-content: center;
